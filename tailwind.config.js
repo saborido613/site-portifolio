@@ -4,7 +4,11 @@ export default {
     './src/**/*.tsx',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Archivo', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
