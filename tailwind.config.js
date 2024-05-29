@@ -6,10 +6,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Archivo', 'sans-serif']
+        archivo: ['Archivo', 'sans-serif']
       }
     },
   },
   plugins: [],
+  
 }
 

@@ -1,3 +1,99 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-button {
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu-button {
+        display: inline-block;
+    }
+    .nav-items {
+        display: none;
+    }
+    .nav-items.expanded {
+        display: block;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+
+.custom-after:hover::after {
+    content: "";
+    display: block;
+    color: #fff; 
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: 'Archivo', 'sans-serif';
+
+  }
+
+#anitta_freefire:hover::after {
+    content: "Anitta | Free Fire"
+}
+#beijo_adolescente:hover::after {
+    content: "Beijo Adolescente | MAX"
+}
+#ze_felipe:hover::after {
+    content: "Zé Felipe | Coloca o Capacete"
+}
+#negao_original:hover::after {
+    content: "MC Negão Original | Espaço de Voz"
+}
+#deezer:hover::after {
+    content: "Deezer"
+}
+#arana_livinho:hover::after {
+    content: "MC Livinho, DJ Arana e DJ Jeeh FDC | AMOR É MENTIRA"
+}
+#honda:hover::after {
+    content: "Honda Facilita"
+}
+#pedro_sampaio:hover::after {
+    content: "Pedro Sampaio, MC Tato | JOIA RARA"
+}
+#hotwhells:hover::after {
+    content: "Hotwhells | SBT"
+}
+#iza_olympikus:hover::after {
+    content: "IZA x Oliympikus | Nunca Mais"
+}
+#anitta_hitmaker:hover::after {
+    content: "Anitta feat. HITMAKER | NU"
+}
+#anitta_ryan:hover::after {
+    content: "Anitta feat. Ryan SP | VAI VENDO"
+}
+  
+  .custom-before::before {
+    
+}
+
+
+  
+  .selection-item-image {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+  }
+  
+  .selection-item-image:hover img {
+    transform: scale(1.20);
+  }
+  
+  .selection-item-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease;
+  }
+ 
+  

@@ -1,0 +1,72 @@
+import Path from "../../Infra/routes/path";
+import Nav from "../Componentes/Nav/nav";
+import imagemVic1 from "/img/1.jpg";
+import imagemVic2 from "/img/2.jpg";
+import imagemVic3 from "/img/3.jpg";
+import imagemVic4 from "/img/4.jpeg";
+import imagemVic5 from "/img/5.jpeg";
+import imagemVic6 from "/img/6.jpeg";
+import imagemVic7 from "/img/7.jpeg";
+import imagemVic8 from "/img/8.png";
+import imagemVic9 from "/img/9.png";
+
+function Infos() {
+    
+    return(
+        <div className="w-full h-full">
+            <Nav color="text-black" link={Path.HOME} nome="Home"/>
+            <div className="pt-32 text-center">
+                <h1 className="font-extrabold text-4xl">SOBRE MIM</h1>
+            </div>
+            <div className=" pt-10 px-20 text-center">
+            <p className='text-3xl text-archivo font-semibold'>
+                    Em todo o meu processo, o significado da narrativa periferica e toda sua singularidade são presentes e ecoam.
+                    Me chamo Victória, e o nome artístico Vic Almeida. 
+                    Formada em 2023 em Relações Públicas, sendo bolsista 100% na faculdade Belas Artes. 
+                    Atuando nas áreas da produção desde 2016, oficializando a partir de 2022. Tendo o vídeo e a foto como áreas correlatas desde muito nova.
+                    E também, a área de comunicação e sua complexidade como uma das minhas paixões!
+                    </p>
+            </div>
+
+            <div className="grid grid-cols-12 pt-10">
+                <div className=" col-span-12 md:row-span-1 md:col-span-2 flex justify-center">
+                    <img src={imagemVic3} alt="" />
+                </div>
+                <div className=" col-span-12 md:row-span-1 md:col-span-4 flex justify-center">
+                    <img src={imagemVic2} alt="" />
+                </div>
+                <div className=" col-span-12 md:row-span-1 md:col-span-4 flex justify-center">
+                    <img src={imagemVic5} alt="" />
+                </div>
+                <div className=" col-span-12 md:row-span-1 md:col-span-2 flex justify-center">
+                    <img src={imagemVic1} alt="" />
+                </div>
+            </div>
+            <div className="grid grid-cols-12">
+                <div className=" col-span-12 md:row-span-1 md:col-span-4 flex justify-center">
+                    <img src={imagemVic9} alt="" />
+                </div>
+
+                <div className=" col-span-12 md:row-span-1 md:col-span-3 flex justify-center">
+                    <img src={imagemVic7} alt="" />
+                </div>
+                <div className=" col-span-12 md:row-span-1 md:col-span-2 flex justify-center">
+                    <img src={imagemVic6} alt="" />
+                </div>
+                <div className=" col-span-12 md:row-span-1 md:col-span-3 flex justify-center">
+                    <img src={imagemVic4} alt="" />
+                </div>
+
+
+            </div>
+
+
+            <div className="text-center py-16">
+                <h1 className="font-extrabold text-xl md:text-4xl">prod.vicalmeida@gmail.com</h1>
+            </div>
+
+        </div>
+    )
+}
+
+export default Infos;
