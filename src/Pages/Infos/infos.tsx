@@ -1,10 +1,6 @@
 import Path from "../../Infra/routes/path";
 import Nav from "../Componentes/Nav/nav";
 import globoParaisopolis from "/img/GLOBO_PARAISOPOLIS.png";
-import para_cine from "/img/PARA_CINE.png";
-import sesc from "/img/sesc.png";
-import fabricas_de_cultura from "/img/FABRICAS_DE_CULTURA.png";
-import expo_favela from "/img/Expo-Favela-Innovation-Brasil_RGB_logo-Negativo-110x50-12 (1).png";
 import CarrosselImagens from "./CarrosselImagens/carrosselImagens";
 
 

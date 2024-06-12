@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Path from "../../../Infra/routes/path";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import logo from "/img/vic_almeida_logo.png";

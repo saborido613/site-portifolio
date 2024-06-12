@@ -1,7 +1,6 @@
 import CafeRoyal from '/img/CAFE_ROYAL_1.png'
 import CRZN from '/img/CORAZON_1.png'
 import Globolay from '/img/GLOBOPLAY_1.png'
-import GR6 from '/img/GR6_1.png'
 import Gullane from '/img/GULLANE_1.png'
 import HM from '/img/HUNGRY_MAN_1.png'
 import HypeBeast from '/img/HYPEBEAST_1.png'
