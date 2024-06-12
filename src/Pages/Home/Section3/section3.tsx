@@ -16,9 +16,10 @@ function Section3() {
         <div className="flex
         flex-col
         w-full
-        pt-10"
+        pt-10
+        bg-black"
         id='section3'>
-            <div className="font-bold text-4xl text-center ">
+            <div className="font-bold text-4xl text-center text-white ">
                 <h1>O QUE EU FAÇO</h1>
             </div>
 

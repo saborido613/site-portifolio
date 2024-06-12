@@ -2,14 +2,16 @@ import { useNavigate } from "react-router-dom";
 import Path from "../../../Infra/routes/path";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import logo from "/img/vic_almeida_logo.png";
 
 interface NavProps {
     color?: string
     nome?: string
     link?: string
+    background?: string
 }
 
-function Nav({color, nome, link}:NavProps) {
+function Nav({color, nome, link, background}:NavProps) {
     const navigate = useNavigate()
     return(
         <nav className={`flex
@@ -21,10 +23,12 @@ function Nav({color, nome, link}:NavProps) {
         w-full
         z-10 
         ${color}
+        ${background}
         items-center
         font-semibold`}>
-          <div className='w-5 md:w-auto'>
-              <h1 className="text-4xl">VIC ALMEIDA</h1>
+          <div className=''>
+              {/* <h1 className="text-4xl font-extrabold">VIC ALMEIDA</h1> */}
+              <img src={logo} alt="" className="h-7"/>
           </div>
 
           <div className='md:flex

@@ -8,12 +8,19 @@ import HypeBeast from '/img/HYPEBEAST_1.png'
 import LoveFunk from '/img/LOVE_FUNK_1.png'
 import Max from '/img/MAX_1.png'
 import Netflix from '/img/NETFLIX_1.png'
+import Hotwhells from '/img/HOT_WHELLS.png'
+import iFood from '/img/ifood.png'
+import PizzaHut from '/img/pizza_hut.png'
+import Versão1 from '/img/Versão 1.png'
+import Volkswagen from '/img/volkswagen_logo.png'
+
+
 
 function Section2() {
     return(
         <div id='section2' className="
         w-full
-        ">
+        bg-white">
             {/* <div className='text-center
                 py-10
                 px-24
@@ -29,9 +36,10 @@ function Section2() {
             </div> */}
 
             <div className="text-center
-            mt-20
+            pt-20
             text-4xl
-            font-bold">
+            font-bold
+            text-black">
                 <h2>EMPRESAS QUE ACREDITARAM NO MEU TRABALHO</h2>
             </div>
 
@@ -60,9 +68,6 @@ function Section2() {
                     <img src={Max} alt=""  />
                 </div>
 
-                <div className='flex justify-center'>
-                    <img src={GR6} alt="" />
-                </div>
 
                 <div className='flex justify-center'>
                     <img src={LoveFunk} alt="" />
@@ -83,11 +88,39 @@ function Section2() {
                 <div className='flex justify-center'>
                     <img src={HM} alt="" />
                 </div>
+                <div className='flex justify-center'>
+                    <img src={Hotwhells} alt="" />
+                </div>
+            </div>
+
+            <div className='grid
+            md:grid-cols-2 
+            lg:grid-cols-4 
+            justify-center 
+            place-items-stretch 
+            gap-20 
+            items-center 
+            px-12
+            lg:px-32 
+            pb-32' >
+                <div className='flex justify-center'>
+                    <img src={iFood} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={PizzaHut} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={Versão1} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={Volkswagen} alt="" />
+                </div>
+            </div>
+                
 
 
 
             
-            </div>
             
 
 

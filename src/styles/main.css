@@ -19,6 +19,11 @@
 
 html{
     scroll-behavior: smooth;
+
+  }
+
+  body {
+    font-family: "Kanit", 'sans-serif';
   }
 
 
@@ -29,7 +34,7 @@ html{
     position: absolute;
     top: 5%;
     left: 5%;
-    font-family: 'Archivo', 'sans-serif';
+    font-family: "Kanit" , 'sans-serif';
 
   }
 
@@ -70,13 +75,7 @@ html{
     content: "Anitta feat. Ryan SP | VAI VENDO"
 }
   
-  .custom-before::before {
-    
-}
-
-
-  
-  .selection-item-image {
+.selection-item-image {
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,6 +93,12 @@ html{
     height: 100%;
     object-fit: cover;
     transition: transform 1s ease;
+    
   }
+
+  .altura-carrossel-imagens {
+    height: 30rem;
+  }
+
  
   
