@@ -4,7 +4,6 @@ import Globolay from '/img/GLOBOPLAY_1.png'
 import Gullane from '/img/GULLANE_1.png'
 import HM from '/img/HUNGRY_MAN_1.png'
 import HypeBeast from '/img/HYPEBEAST_1.png'
-import LoveFunk from '/img/LOVE_FUNK_1.png'
 import Max from '/img/MAX_1.png'
 import Netflix from '/img/NETFLIX_1.png'
 import Hotwhells from '/img/HOT_WHELLS.png'
@@ -77,7 +76,7 @@ function Section2() {
 
 
                 <div className='flex justify-center'>
-                    <img src={LoveFunk} alt="" />
+                    <img src={Hotwhells} alt="" />
                 </div>
 
                 <div className='flex justify-center'>
