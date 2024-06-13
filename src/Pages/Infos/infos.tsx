@@ -1,6 +1,6 @@
 import Path from "../../Infra/routes/path";
 import Nav from "../Componentes/Nav/nav";
-import globoParaisopolis from "/img/GLOBO_PARAISOPOLIS.png";
+import globoParaisopolis from "/img/globo_branco.png";
 import CarrosselImagens from "./CarrosselImagens/carrosselImagens";
 
 
@@ -9,79 +9,58 @@ function Infos() {
     return(
         <div className="w-full h-full bg-black">
             <Nav color="text-white" link={Path.HOME} nome="Home"/>
-            <div className="pt-40 px-10 xl:px-96 text-white">
-                <h1 className="font-bold text-2xl lg:text-4xl">AUDIOVISUAL & CULTURA SÃO </h1>
-                <h1 className="font-bold text-2xl lg:text-4xl">AS MINHAS PAIXÕES</h1>
+            <div className="pt-32 px-10 xl:px-96 text-white">
+                <h1 className="font-medium text-center text-2xl lg:text-4xl">Conexão, Arte, Cultura Periférica & Audiovisual </h1>
             </div>
-            <div className=" pt-10 px-10 xl:px-96 text-black">
-            <p className='lg:text-2xl text-white text-justify'>
-                    Em todo o meu processo, o significado da narrativa periferica e toda sua singularidade são presentes e ecoam.
-                    Me chamo Victória, e o nome artístico Vic Almeida. 
-                    Formada em 2023 em Relações Públicas, sendo bolsista 100% na faculdade Belas Artes. 
-                    Atuando nas áreas da produção desde 2016, oficializando a partir de 2022. Tendo o vídeo e a foto como áreas correlatas desde muito nova.
-                    E também, a área de comunicação e sua complexidade como uma das minhas paixões!
-                    </p>
+                
+            <div className=" pt-10 px-10 xl:px-96 ">
+
+                <p className='lg:text-xl text-white text-justify'>
+                    <span className="text-orange-500">Victória Almeida</span>, 23 anos. Moradora de uma das maiores periferias de <span className="text-orange-500">São Paulo, Paraisópolis</span>. 
+                    Formada em Relações Públicas como <span className="text-orange-500">bolsista 100%</span> pela universidade Belas Artes, se desenvolve 
+                    diariamente na área audiovisual onde atua ativamente em projetos de marcas, artistas e socioculturais nas periferias, com foco na arte e 
+                    cinema.
+                    Com o objetivo de vida de amplificar cada vez mais os espaços e <span className="text-orange-500">potencializar a periferia</span> de 
+                    modo geral, <span className="text-orange-500">artisticamente e socialmente</span>.
+                </p>
+
+                <p className="mt-6 lg:text-xl text-white text-justify">
+                Co-fundadora do <span className="text-orange-500">Projeto Paracine</span> (@para_cine), 
+                que tem o intuito de <span className="text-orange-500">democratizar o acesso</span> ao audiovisual para jovens e adultos de todas as favelas
+                de São Paulo, com aulas, workshops e exibições de curtas-metragens, <span className="text-orange-500">desde 2021</span>. 
+                </p>
+
+                <p className="mt-6 lg:text-xl text-white text-justify">
+                Se destaca e leva seus conhecimentos com frequência <span className="text-orange-500">como palestrante</span> em unidades do Sesc, Senac, Fábricas de Cultura e Podcast’s, 
+                visando construir espaços de troca que sejam benéficos para a inserção de novos profissionais no <span className="text-orange-500">mercado criativo</span> e 
+                seus desafios.
+                </p>
+            
             </div>
-            <div className="pt-12 px-10 xl:px-96 text-white">
-                <h1 className="font-extrabold text-xl md:text-2xl">prod.vicalmeida@gmail.com</h1>
+
+            <CarrosselImagens/>
+            
+            <div className="px-10 xl:px-96 text-white mt-12">
+                <h1 className="font-medium text-2xl lg:text-4xl">Contatos</h1>
             </div>
-            <div className=" px-10 xl:px-96 pt-10">
+
+            <div className="px-10 xl:px-96 text-white mt-8 flex flex-col gap-3">
+                <h1 className="font-medium text-xl lg:text-3xl text-orange-500">Instagram</h1>
+                <p>@vickkalmeida</p>
+            </div>
+            
+            <div className="pt-10 px-10 xl:px-96 text-white flex flex-col gap-3">
+                <h1 className="font-medium text-xl md:text-3xl text-orange-500">Email</h1>
+                <p>prod.vicalmeida@gmail.com</p>
+            </div>
+            
+            <div className="px-10 xl:px-96 py-10">
                 <img src={globoParaisopolis} alt="" className="w-16" />
             </div>
 
-            {/* <div className="grid grid-cols-12 pt-10">
-                <div className=" col-span-12 md:row-span-1 md:col-span-2 flex justify-center">
-                    <img src={imagemVic3} alt="" />
-                </div>
-                <div className=" col-span-12 md:row-span-1 md:col-span-4 flex justify-center">
-                    <img src={imagemVic2} alt="" />
-                </div>
-                <div className=" col-span-12 md:row-span-1 md:col-span-4 flex justify-center">
-                    <img src={imagemVic5} alt="" />
-                </div>
-                <div className=" col-span-12 md:row-span-1 md:col-span-2 flex justify-center">
-                    <img src={imagemVic1} alt="" />
-                </div>
-            </div>
-            <div className="grid grid-cols-12">
-                <div className=" col-span-12 md:row-span-1 md:col-span-4 flex justify-center">
-                    <img src={imagemVic9} alt="" />
-                </div>
-
-                <div className=" col-span-12 md:row-span-1 md:col-span-3 flex justify-center">
-                    <img src={imagemVic7} alt="" />
-                </div>
-                <div className=" col-span-12 md:row-span-1 md:col-span-2 flex justify-center">
-                    <img src={imagemVic6} alt="" />
-                </div>
-                <div className=" col-span-12 md:row-span-1 md:col-span-3 flex justify-center">
-                    <img src={imagemVic4} alt="" />
-                </div>
-            </div> */}
-
-            <CarrosselImagens/>
-
-            {/* <div className="flex gap-12 md:gap-40 items-center justify-center py-10 bg-white">
-                <div>
-                    <img src={sesc} alt="" />
-                </div>
-                <div>
-                    <img src={para_cine} alt="" />
-                </div>
-                <div>
-                    <img src={fabricas_de_cultura} alt="" />
-                </div>
-                <div>
-                    <img src={expo_favela} alt="" />
-                </div>
-
-            </div> */}
-
-
-
-
-
         </div>
+
+
     )
 }
 

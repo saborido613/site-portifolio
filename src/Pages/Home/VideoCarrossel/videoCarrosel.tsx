@@ -11,9 +11,11 @@ import Path from '../../../Infra/routes/path';
 import Nav from '../../Componentes/Nav/nav';
 
 const videos = [
-  { src: '/Videos/videoplayback (1).mp4', type: 'video/mp4'},
-  { src: '/Videos/videoplayback.mp4', type: 'video/mp4' },
-  { src: '/Videos/VEIGH - Nois é Nois (Clipe Oficial).mp4', type: 'video/mp4' },
+  { src: '/Videos/FREE FIRE X ANITTA   TROPA FTLUCK MUZIK   CLIPE OFICIAL   Garena Free Fir[1].mp4', type: 'video/mp4'},
+  { src: '/Videos/Consórcio Honda   Facilitadão (Clipe Oficial[1].mp4', type: 'video/mp4' },
+  { src: '/Videos/VEIGH   Nois é Nois (Clipe Oficial[1].mp4', type: 'video/mp4' },
+  { src: '/Videos/IZA x Olympikus   Boombasstic (O MOVIMENTO.mp4', type: 'video/mp4' },
+  { src: '/Videos/Snapinsta.app_video_An8VJcVpffYdXPYAukAqzpfbyiO6nlbtSGzXnIvVytT3qYZUkLQOeKE7Tng6nxY-qBDOj2oFzSVE3fMrIonKgZvw.mp4', type: 'video/mp4' },
 ];
 
 const VideoCarousel: React.FC = () => {

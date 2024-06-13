@@ -12,6 +12,14 @@ import iFood from '/img/ifood.png'
 import PizzaHut from '/img/pizza_hut.png'
 import Versão1 from '/img/Versão 1.png'
 import Volkswagen from '/img/volkswagen_logo.png'
+import Claro from '/img/claro_logo.png'
+import Google from '/img/google_logo.png'
+import Honda from '/img/honda_logo.png'
+import IGC from '/img/igc_partners_logo.png'
+import KLM from '/img/KLM_logo.png'
+import O2 from '/img/o2_filmes_logo.png'
+import Pedigree from '/img/pedigree_logo.png'
+import Deezer from '/img/deezer.png'
 
 
 
@@ -43,14 +51,14 @@ function Section2() {
             </div>
 
             <div className='grid
-            md:grid-cols-2 
-            lg:grid-cols-5 
+            md:grid-cols-3 
+            lg:grid-cols-7 
             justify-center 
             place-items-stretch 
             gap-20 
             items-center 
-            px-10 
-            py-32' >
+            px-12 
+            py-20' >
                 <div className='flex justify-center'>
                     <img src={Netflix} alt=""  />
                 </div>
@@ -88,20 +96,29 @@ function Section2() {
                     <img src={HM} alt="" />
                 </div>
                 <div className='flex justify-center'>
-                    <img src={Hotwhells} alt="" />
+                    <img src={Claro} alt="" />
                 </div>
-            </div>
-
-            <div className='grid
-            md:grid-cols-2 
-            lg:grid-cols-4 
-            justify-center 
-            place-items-stretch 
-            gap-20 
-            items-center 
-            px-12
-            lg:px-32 
-            pb-32' >
+                <div className='flex justify-center'>
+                    <img src={Deezer} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={Google} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={Honda} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={IGC} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={KLM} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={O2} alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={Pedigree} alt="" />
+                </div>
                 <div className='flex justify-center'>
                     <img src={iFood} alt="" />
                 </div>
@@ -115,6 +132,13 @@ function Section2() {
                     <img src={Volkswagen} alt="" />
                 </div>
             </div>
+        </div>
+
+    )
+}
+
+export default Section2;
+
                 
 
 
@@ -127,10 +151,3 @@ function Section2() {
 
             
 
-
-        </div>
-
-    )
-}
-
-export default Section2;

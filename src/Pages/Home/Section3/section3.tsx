@@ -6,10 +6,11 @@ import Beijo_Adolescente from '/img/Beijo_Adolescente_HBO_MAX.jpg'
 import Deezer from '/img/Deezer_1.png'
 import Honda from '/img/Honda_Facilita_1.png'
 import Hotwhells from '/img/Hotwhells_SBT_1.png'
-import Iza_Olympikus from '/img/IZA x Olympikus - Nunca Mais.png'
+import Iza_Olympikus from '/img/iza_olympikus_o_movimento.png'
 import Negao_Original from '/img/MC Negão Original Espaço de Voz.png'
 import Pedro_Sampaio from '/img/PEDRO SAMPAIO, MC Tato - JOIA RARA.png'
 import Ze_Felipe from '/img/ZÉ FELIPE EP Coloca O Capacete.png'
+import Pizza_Hut from '/img/PIZZA_HUT_MELTS.png'
 
 function Section3() {
     return(
@@ -109,6 +110,13 @@ function Section3() {
                 custom-after
                 selection-item-image' id='anitta_ryan'>
                     <img src={Anitta_RyanSp} alt="" />
+                </div>
+                <div className='flex 
+                justify-center 
+                relative 
+                custom-after
+                selection-item-image' id='pizza_hut'>
+                    <img src={Pizza_Hut} alt="" />
                 </div>
             </div>
         </div>

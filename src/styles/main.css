@@ -66,13 +66,16 @@ html{
     content: "Hotwhells | SBT"
 }
 #iza_olympikus:hover::after {
-    content: "IZA x Oliympikus | Nunca Mais"
+    content: "IZA x Oliympikus | O Movimento"
 }
 #anitta_hitmaker:hover::after {
     content: "Anitta feat. HITMAKER | NU"
 }
 #anitta_ryan:hover::after {
     content: "Anitta feat. Ryan SP | VAI VENDO"
+}
+#pizza_hut:hover::after {
+    content: "Pizza Hut | Melts"
 }
   
 .selection-item-image {
