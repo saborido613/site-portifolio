@@ -30,14 +30,15 @@ function Section2() {
 
             <div className="text-center
             pt-20
-            text-4xl
+            text-2xl
+            md:text-4xl
             font-bold
             text-black">
                 <h2>EMPRESAS QUE ACREDITARAM NO MEU TRABALHO</h2>
             </div>
 
             <div className='grid
-            md:grid-cols-3 
+            grid-cols-3 
             lg:grid-cols-7 
             justify-center 
             place-items-stretch 

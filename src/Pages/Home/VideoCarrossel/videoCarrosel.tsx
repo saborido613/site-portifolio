@@ -27,9 +27,10 @@ const VideoCarousel: React.FC = () => {
         pagination={{ clickable: true }}
         navigation={true}
         autoplay={{delay:4000, disableOnInteraction: false}}
-        className="w-full h-screen relative"
+        className="altura-carrossel-imagens md:w-full h-screen relative"
+        id='carrossel-videos-mobile'
       >
-      <Nav color='text-white' nome='Info+Contato' link={Path.INFOS}/>
+      <Nav color='text-white' nome='Sobre Mim' link={Path.INFOS}/>
 
         {videos.map((video, index) => (
           <SwiperSlide key={index} className="flex items-center justify-center">

@@ -20,11 +20,11 @@ function Section3() {
         pt-10
         bg-black"
         id='section3'>
-            <div className="font-bold text-4xl text-center text-white ">
+            <div className="font-bold text-2xl md:text-4xl text-center text-white ">
                 <h1>O QUE EU FAÇO</h1>
             </div>
 
-            <div className="grid md:grid-cols-2 pt-10 h-auto">
+            <div className="grid grid-cols-2 pt-10 h-auto">
            
                 <div className='flex 
                 justify-center 
