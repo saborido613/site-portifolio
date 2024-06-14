@@ -28,7 +28,7 @@ const CarrosselImagens: React.FC = () => {
         pagination={{ clickable: true }}
         navigation={true}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
-        className="altura-carrossel-imagens-mobile md:altura-carrossel-imagens"
+        className="altura-carrossel-imagens-mobile"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index} className="flex items-center justify-center">
