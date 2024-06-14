@@ -1,16 +1,13 @@
-import Anitta_FreeFire from '/img/Anitta_FreeFire_1.png'
 import Anitta_Hitmaker from '/img/Anitta - NU (feat. HITMAKER).png'
 import Anitta_RyanSp from '/img/Anitta - VAI VENDO [feat. Mc Ryan SP].png'
 import Arana_Livinho from '/img/AMOR É MENTIRA -  MC Livinho, DJ Arana e DJ Jeeh FDC.png'
 import Beijo_Adolescente from '/img/Beijo_Adolescente_HBO_MAX.jpg'
 import Deezer from '/img/Deezer_1.png'
-import Honda from '/img/Honda_Facilita_1.png'
 import Hotwhells from '/img/Hotwhells_SBT_1.png'
-import Iza_Olympikus from '/img/iza_olympikus_o_movimento.png'
 import Negao_Original from '/img/MC Negão Original Espaço de Voz.png'
 import Pedro_Sampaio from '/img/PEDRO SAMPAIO, MC Tato - JOIA RARA.png'
 import Ze_Felipe from '/img/ZÉ FELIPE EP Coloca O Capacete.png'
-import Pizza_Hut from '/img/PIZZA_HUT_MELTS.png'
+
 
 function Section3() {
     return(
@@ -29,94 +26,83 @@ function Section3() {
                 <div className='flex 
                 justify-center 
                 relative 
-                custom-after 
-                selection-item-image' 
-                id='anitta_freefire'>
-                    <img src={Anitta_FreeFire} alt="" className=''/>
-                </div>
-                <div className='flex 
-                justify-center 
-                relative 
                 custom-after
-                selection-item-image' id='beijo_adolescente'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='beijo_adolescente'>
                     <img src={Beijo_Adolescente} alt="" />
                 </div>
                 <div className='flex 
                 justify-center 
                 relative 
                 custom-after
-                selection-item-image' id='ze_felipe'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='ze_felipe'>
                     <img src={Ze_Felipe} alt="" />
                 </div>
                 <div className='flex 
                 justify-center 
                 relative 
                 custom-after
-                selection-item-image' id='negao_original'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='negao_original'>
                     <img src={Negao_Original} alt="" />
                 </div>
                 <div className='flex 
                 justify-center 
                 relative 
                 custom-after
-                selection-item-image' id='deezer'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='deezer'>
                     <img src={Deezer} alt="" />
                 </div>
                 <div className='flex 
                 justify-center 
                 relative 
                 custom-after
-                selection-item-image' id='arana_livinho'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='arana_livinho'>
                     <img src={Arana_Livinho} alt="" />
                 </div>
                 <div className='flex 
                 justify-center 
                 relative 
                 custom-after
-                selection-item-image' id='honda'>
-                    <img src={Honda} alt="" />
-                </div>
-                <div className='flex 
-                justify-center 
-                relative 
-                custom-after
-                selection-item-image' id='pedro_sampaio'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='pedro_sampaio'>
                     <img src={Pedro_Sampaio} alt="" />
                 </div>
                 <div className='flex 
                 justify-center 
                 relative 
                 custom-after
-                selection-item-image' id='hotwhells'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='hotwhells'>
                     <img src={Hotwhells} alt="" />
                 </div>
                 <div className='flex 
                 justify-center 
                 relative 
                 custom-after
-                selection-item-image' id='iza_olympikus'>
-                    <img src={Iza_Olympikus} alt="" />
-                </div>
-                <div className='flex 
-                justify-center 
-                relative 
-                custom-after
-                selection-item-image' id='anitta_hitmaker'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='anitta_hitmaker'>
                     <img src={Anitta_Hitmaker} alt="" />
                 </div>
                 <div className='flex 
                 justify-center 
                 relative 
                 custom-after
-                selection-item-image' id='anitta_ryan'>
+                selection-item-image
+                text-xs
+                md:text-xl' id='anitta_ryan'>
                     <img src={Anitta_RyanSp} alt="" />
-                </div>
-                <div className='flex 
-                justify-center 
-                relative 
-                custom-after
-                selection-item-image' id='pizza_hut'>
-                    <img src={Pizza_Hut} alt="" />
                 </div>
             </div>
         </div>

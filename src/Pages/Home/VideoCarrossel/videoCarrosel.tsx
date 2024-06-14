@@ -27,8 +27,8 @@ const VideoCarousel: React.FC = () => {
         pagination={{ clickable: true }}
         navigation={true}
         autoplay={{delay:4000, disableOnInteraction: false}}
-        className="altura-carrossel-imagens md:w-full h-screen relative"
-        id='carrossel-videos-mobile'
+        className="carrossel-videos-mobile md:w-full md:h-screen relative"
+        
       >
       <Nav color='text-white' nome='Sobre Mim' link={Path.INFOS}/>
 
