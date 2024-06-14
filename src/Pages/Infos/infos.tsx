@@ -15,7 +15,7 @@ function Infos() {
                 
             <div className=" pt-10 px-10 xl:px-96 ">
 
-                <p className='lg:text-xl text-white text-justify'>
+                <p className='text-sm lg:text-xl text-white text-justify'>
                     <span className="text-orange-500">Victória Almeida</span>, 23 anos. Moradora de uma das maiores periferias de <span className="text-orange-500">São Paulo, Paraisópolis</span>. 
                     Formada em Relações Públicas como <span className="text-orange-500">bolsista 100%</span> pela universidade Belas Artes, se desenvolve 
                     diariamente na área audiovisual onde atua ativamente em projetos de marcas, artistas e socioculturais nas periferias, com foco na arte e 
@@ -24,13 +24,13 @@ function Infos() {
                     modo geral, <span className="text-orange-500">artisticamente e socialmente</span>.
                 </p>
 
-                <p className="mt-6 lg:text-xl text-white text-justify">
+                <p className="mt-6 text-sm lg:text-xl text-white text-justify">
                 Co-fundadora do <span className="text-orange-500">Projeto Paracine</span> (@para_cine), 
                 que tem o intuito de <span className="text-orange-500">democratizar o acesso</span> ao audiovisual para jovens e adultos de todas as favelas
                 de São Paulo, com aulas, workshops e exibições de curtas-metragens, <span className="text-orange-500">desde 2021</span>. 
                 </p>
 
-                <p className="mt-6 lg:text-xl text-white text-justify">
+                <p className="mt-6 text-sm lg:text-xl text-white text-justify">
                 Se destaca e leva seus conhecimentos com frequência <span className="text-orange-500">como palestrante</span> em unidades do Sesc, Senac, Fábricas de Cultura e Podcast’s, 
                 visando construir espaços de troca que sejam benéficos para a inserção de novos profissionais no <span className="text-orange-500">mercado criativo</span> e 
                 seus desafios.
@@ -55,7 +55,7 @@ function Infos() {
             </div>
             
             <div className="px-10 xl:px-96 py-10">
-                <img src={globoParaisopolis} alt="" className="w-16" />
+                <img src={globoParaisopolis} alt="" className="w-8 md:w-16" />
             </div>
 
         </div>

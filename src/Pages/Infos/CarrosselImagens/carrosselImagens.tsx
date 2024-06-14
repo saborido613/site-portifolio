@@ -21,14 +21,14 @@ const images = [
 const CarrosselImagens: React.FC = () => {
   return (
     
-    <div className="flex-col mt-10 px-20">
+    <div className="flex-col mt-10 md:px-20">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         loop={true}
         pagination={{ clickable: true }}
         navigation={true}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
-        className="altura-carrossel-imagens"
+        className="altura-carrossel-imagens-mobile md:altura-carrossel-imagens"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index} className="flex items-center justify-center">

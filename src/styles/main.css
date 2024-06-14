@@ -117,6 +117,10 @@ html{
   .altura-carrossel-imagens {
     height: 30rem;
   }
+  .altura-carrossel-imagens-mobile {
+    height: 20rem;
+  }
+
 
  
   
