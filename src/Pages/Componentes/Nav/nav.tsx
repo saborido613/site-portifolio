@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import logo from "/img/vic_almeida_logo.png";
+import { useState } from "react";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 interface NavProps {
     color?: string
@@ -12,6 +14,11 @@ interface NavProps {
 
 function Nav({color, nome, link, background}:NavProps) {
     const navigate = useNavigate()
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => {
+      setMenuOpen(!menuOpen)
+    };
+
     return(
         <nav className={`flex
         fixed
@@ -26,17 +33,24 @@ function Nav({color, nome, link, background}:NavProps) {
         items-center
         font-semibold`}>
           <div className=''>
-              {/* <h1 className="text-4xl font-extrabold">VIC ALMEIDA</h1> */}
-              <img src={logo} alt="" className="h-7"/>
+              <img src={logo} alt="" className="h-5 md:h-7"/>
           </div>
 
-          <div className='md:flex
+          <div className='md:hidden'>
+                <button onClick={toggleMenu}>
+                    <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
+                </button>
+            </div>
+
+          <div className='
+            hidden
+            md:flex
             gap-5  
             text-2xl
             justify-center
             items-center'>
 
-            <div>
+            <div className="">
               <span onClick={()=>navigate(link!)}
               className='cursor-pointer'>{nome}</span>
             </div>
@@ -46,8 +60,24 @@ function Nav({color, nome, link, background}:NavProps) {
               <a href="https://br.linkedin.com/in/vict%C3%B3ria-almeida-a2b24a19b"><FontAwesomeIcon icon={faLinkedin}/></a>
             </div>
 
-              
+            </div>
+            {menuOpen && (
+              <div className='absolute top-16 right-0 w-full  flex flex-col items-end p-4 md:hidden'>
+              <div className="mt-4 w-full text-right">
+                  <span onClick={() => navigate(link!)} className='cursor-pointer text-xl'>{nome}</span>
+              </div>
+
+              <div className='flex flex-col gap-5 justify-start mt-4 w-full text-right'>
+                  <a href="https://www.instagram.com/vickkalmeida/" className='block'><FontAwesomeIcon icon={faInstagram} /></a>
+                  <a href="https://br.linkedin.com/in/vict%C3%B3ria-almeida-a2b24a19b" className='block'><FontAwesomeIcon icon={faLinkedin} /></a>
+              </div>
           </div>
+            
+            
+            )}
+
+              
+          
       </nav>
     )
 }

@@ -46,12 +46,12 @@ function Infos() {
 
             <div className="px-10 xl:px-96 text-white mt-8 flex flex-col gap-3">
                 <h1 className="font-medium text-xl lg:text-3xl text-orange-500">Instagram</h1>
-                <p>@vickkalmeida</p>
+                <p className="fonte-personalizada md:text-lg">@vickkalmeida</p>
             </div>
             
             <div className="pt-10 px-10 xl:px-96 text-white flex flex-col gap-3">
                 <h1 className="font-medium text-xl md:text-3xl text-orange-500">Email</h1>
-                <p>prod.vicalmeida@gmail.com</p>
+                <p className="fonte-personalizada md:text-lg">prod.vicalmeida@gmail.com</p>
             </div>
             
             <div className="px-10 xl:px-96 py-10">

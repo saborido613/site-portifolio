@@ -27,19 +27,6 @@ function Section2() {
         <div id='section2' className="
         w-full
         bg-white">
-            {/* <div className='text-center
-                py-10
-                px-24
-                bg-black
-                '>
-                    <p className='text-2xl text-archivo font-bold text-white'>
-                    Em todo o meu processo, o significado da narrativa periferica e toda sua singularidade são presentes e ecoam.
-                    Me chamo Victória, e o nome artístico Vic Almeida. 
-                    Formada em 2023 em Relações Públicas, sendo bolsista 100% na faculdade Belas Artes. 
-                    Atuando nas áreas da produção desde 2016, oficializando a partir de 2022. Tendo o vídeo e a foto como áreas correlatas desde muito nova.
-                    E também, a área de comunicação e sua complexidade como uma das minhas paixões!
-                    </p>
-            </div> */}
 
             <div className="text-center
             pt-20

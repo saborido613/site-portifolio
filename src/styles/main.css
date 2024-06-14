@@ -26,6 +26,21 @@ html{
     font-family: "Kanit", 'sans-serif';
   }
 
+  @font-face {
+    font-family: 'Gza';
+    src: url('fonts/Gza-SemiBoldItalic.ttf') format('truetype'), 
+         url('fonts/Gza-SemiBoldItalic.woff') format('woff'),
+         url('fonts/Gza-SemiBoldItalic.woff2') format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    .fonte-personalizada {
+        font-family: 'Gza';
+    }
+
+
 
 .custom-after:hover::after {
     content: "";
