@@ -93,6 +93,15 @@ html{
 #pizza_hut:hover::after {
     content: "Pizza Hut | Melts"
 }
+#claro:hover::after {
+    content: "Claro | Copa"
+}
+#desabafo:hover::after {
+    content: "Desabafo | MC GP, Tuto e Kadu"
+}
+#hypebeast:hover::after {
+    content: "Hypebeast | Whatsapp"
+}
   
 .selection-item-image {
     overflow: hidden;

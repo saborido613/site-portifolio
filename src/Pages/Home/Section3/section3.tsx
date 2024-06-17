@@ -7,6 +7,9 @@ import Hotwhells from '/img/Hotwhells_SBT_1.png'
 import Negao_Original from '/img/MC Negão Original Espaço de Voz.png'
 import Pedro_Sampaio from '/img/PEDRO SAMPAIO, MC Tato - JOIA RARA.png'
 import Ze_Felipe from '/img/ZÉ FELIPE EP Coloca O Capacete.png'
+import Claro from '/img/CLARO_COPA.png'
+import Desabafo from '/img/DESABAFO - MC KADU, MC GP, MC TUTO E MC JOTTAK.jpg'
+import HypeBeast from '/img/HYPEBEAST_BRASIL.png'
 
 
 function Section3() {
@@ -18,7 +21,7 @@ function Section3() {
         bg-black"
         id='section3'>
             <div className="font-bold text-2xl md:text-4xl text-center text-white ">
-                <h1>O QUE EU FAÇO</h1>
+                <h1>UM POUCO DO QUE EU FAÇO</h1>
             </div>
 
             <div className="grid grid-cols-2 pt-10 h-auto">
@@ -83,15 +86,6 @@ function Section3() {
                 custom-after
                 selection-item-image
                 text-xs
-                md:text-xl' id='hotwhells'>
-                    <img src={Hotwhells} alt="" />
-                </div>
-                <div className='flex 
-                justify-center 
-                relative 
-                custom-after
-                selection-item-image
-                text-xs
                 md:text-xl' id='anitta_hitmaker'>
                     <img src={Anitta_Hitmaker} alt="" />
                 </div>
@@ -103,6 +97,42 @@ function Section3() {
                 text-xs
                 md:text-xl' id='anitta_ryan'>
                     <img src={Anitta_RyanSp} alt="" />
+                </div>
+                <div className='flex 
+                justify-center 
+                relative 
+                custom-after
+                selection-item-image
+                text-xs
+                md:text-xl' id='hotwhells'>
+                    <img src={Hotwhells} alt="" />
+                </div>
+                <div className='flex 
+                justify-center 
+                relative 
+                custom-after
+                selection-item-image
+                text-xs
+                md:text-xl' id='claro'>
+                    <img src={Claro} alt="" />
+                </div>
+                <div className='flex 
+                justify-center 
+                relative 
+                custom-after
+                selection-item-image
+                text-xs
+                md:text-xl' id='desabafo'>
+                    <img src={Desabafo} alt="" />
+                </div>
+                <div className='flex 
+                justify-center 
+                relative 
+                custom-after
+                selection-item-image
+                text-xs
+                md:text-xl' id='hypebeast'>
+                    <img src={HypeBeast} alt="" />
                 </div>
             </div>
         </div>
