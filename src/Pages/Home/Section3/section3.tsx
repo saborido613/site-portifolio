@@ -49,7 +49,7 @@ function Section3() {
                 relative 
                 custom-after
                 selection-item-image
-                text-xs
+                text-[0.7rem]
                 md:text-xl' id='negao_original'>
                     <img src={Negao_Original} alt="" />
                 </div>
@@ -67,8 +67,9 @@ function Section3() {
                 relative 
                 custom-after
                 selection-item-image
-                text-xs
-                md:text-xl' id='arana_livinho'>
+                text-[0.5rem]
+                md:text-[0.8rem]
+                lg:text-xl' id='arana_livinho'>
                     <img src={Arana_Livinho} alt="" />
                 </div>
                 <div className='flex 
@@ -121,7 +122,7 @@ function Section3() {
                 relative 
                 custom-after
                 selection-item-image
-                text-xs
+                text-[0.7rem]
                 md:text-xl' id='desabafo'>
                     <img src={Desabafo} alt="" />
                 </div>
