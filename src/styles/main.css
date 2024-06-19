@@ -84,7 +84,7 @@ html{
     white-space: pre;
 }
 #anitta_hitmaker:hover::after {
-    content: "Anitta feat. HITMAKER | NU" "\A ⁠2ª Assistente de Produção";
+    content: "Anitta feat. HITMAKER | NU" "\A Assistente de Coordenação";
     white-space: pre;
 }
 #anitta_ryan:hover::after {
@@ -104,7 +104,47 @@ html{
     content: "Hypebeast | Whatsapp" "\A ⁠1ª Assistente de Produção";
     white-space: pre;
 }
-  
+#mc_lan:hover::after {
+    content: "Mete Love | MC Lan e Kotim" "\A ⁠Direção de Produção e Produção Executiva";
+    white-space: pre;
+}
+#pecinha:hover::after {
+    content: "PECINHA NÍVEL 10 | DJ Arana, Yuri Redicopa e Meno Saaint " "\A ⁠Direção de Produção e Produção Executiva";
+    white-space: pre;
+}
+#pouco_papo:hover::after {
+    content: "POUCO PAPO E MUITO VAPO | DJ Jeeh FDC e MC Arcanjo" "\A ⁠Direção de Produção e Produção Executiva";
+    white-space: pre;
+}
+#sentido_e_o_baile:hover::after {
+    content: "SENTIDO É O BAILE | Luana Maia e DJ KLP" "\A ⁠Direção de Produção e Produção Executiva";
+    white-space: pre;
+}
+#sesh_delas:hover::after {
+    content: "SESH DELAS | Nivy, Mabapp,Lorak,Barona, Bjay,Lais Rosa,Nanda tsunami,Bia soull,Dayômi,Vmaria,Aycee" "\A ⁠Direção de Produção e Produção Executiva";
+    white-space: pre;
+}
+#tchau_bella:hover::after {
+    content: "TCHAU, BELLA! | Netflix Brasil" "\A ⁠Direção de Produção e Produção Executiva";
+    white-space: pre;
+}
+#se_joga_no_boom:hover::after {
+    content: "SE JOGA NO BOOM | Free Fire" "\A ⁠Direção de Produção e Produção Executiva";
+    white-space: pre;
+}
+#texaco:hover::after {
+    content: "Texaco" "\A Assistente de Produção ";
+    white-space: pre;
+}
+#volkswagen:hover::after {
+    content: "Volkswagen | Tiguan" "\A 1ª Assistente de Produção";
+    white-space: pre;
+}
+#globoplay:hover::after {
+    content: "GLOBOPLAY | 40M²" "\A ⁠Direção de Produção e Produção Executiva";
+    white-space: pre;
+}
+
 .selection-item-image {
     overflow: hidden;
     background-repeat: no-repeat;

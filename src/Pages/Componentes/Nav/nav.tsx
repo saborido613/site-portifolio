@@ -4,6 +4,7 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import logo from "/img/vic_almeida_logo.png";
 import { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Path from "../../../Infra/routes/path";
 
 interface NavProps {
     color?: string
@@ -33,7 +34,9 @@ function Nav({color, nome, link, background}:NavProps) {
         items-center
         font-semibold`}>
           <div className=''>
+            <a href={Path.HOME}>
               <img src={logo} alt="" className="h-5 md:h-7"/>
+            </a>
           </div>
 
           <div className='md:hidden'>
