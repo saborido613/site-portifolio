@@ -218,8 +218,8 @@ function Section3() {
                 relative 
                 custom-after
                 selection-item-image
-                text-[0.2rem]
-                md:text-[0.4rem]
+                text-[0.5rem]
+                md:text-[0.6rem]
                 lg:text-base
                 "
           id="sesh_delas"

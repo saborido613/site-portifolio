@@ -101,7 +101,7 @@ html{
     white-space: pre;
 }
 #sesh_delas:hover::after {
-    content: "SESH DELAS | Nivy, Mabapp,Lorak,Barona, Bjay,Lais Rosa,Nanda tsunami,Bia soull,Dayômi,Vmaria,Aycee" "\A ⁠Direção de Produção e Produção Executiva";
+    content: "SESH DELAS | Nivy" "\A ⁠Direção de Produção e Produção Executiva";
     white-space: pre;
 }
 #tchau_bella:hover::after {
@@ -165,6 +165,8 @@ html{
     transition: transform 1s ease;
     
   }
+
+ 
 
 
  
