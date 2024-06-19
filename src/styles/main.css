@@ -54,20 +54,17 @@ html{
 
   }
 
-#beijo_adolescente:hover::after {
-    content: "Beijo Adolescente | MAX" "\A Aux. de Produção de Biossegurança";
-    white-space: pre;
-}
+
 #ze_felipe:hover::after {
-    content: "Zé Felipe | Coloca o Capacete" "\A 1ª Assistente de Produção";
+    content: "Zé Felipe | Coloca o Capacete" "\A 2ª Assistente de Produção";
     white-space: pre;
 }
 #negao_original:hover::after {
     content: "MC Negão Original | Espaço de Voz" "\A Direção de Produção e Produção Executiva";
     white-space: pre;
 }
-#deezer:hover::after {
-    content: "Deezer" "\A ⁠1ª Assistente de Produção";
+#desabafo:hover::after {
+    content: "Desabafo | MC GP, Tuto e Kadu" "\A ⁠Direção de Produção e Produção Executiva";
     white-space: pre;
 }
 #arana_livinho:hover::after {
@@ -75,33 +72,16 @@ html{
     white-space: pre;
     
 }
-#pedro_sampaio:hover::after {
-    content: "Pedro Sampaio, MC Tato | JOIA RARA" "\A 1ª Assistente de Produção";
-    white-space: pre;
-}
-#hotwhells:hover::after {
-    content: "Hotwhells | SBT" "\A ⁠2ª Assistente de Produção";
-    white-space: pre;
-}
 #anitta_hitmaker:hover::after {
-    content: "Anitta feat. HITMAKER | NU" "\A Assistente de Coordenação";
+    content: "Anitta feat. HITMAKER | NU" "\A Assistente de Coord. Hungry Man e 1ª Assist. Produção";
     white-space: pre;
 }
 #anitta_ryan:hover::after {
-    content: "Anitta feat. Ryan SP | VAI VENDO" "\A ⁠Produtora";
+    content: "Anitta feat. Ryan SP | VAI VENDO" "\A Assistente de Coord. Hungry Man e 1ª Assist. Produção";
     white-space: pre;
 }
-
-#claro:hover::after {
-    content: "Claro | Copa" "\A ⁠2ª Assistente de Produção";
-    white-space: pre;
-}
-#desabafo:hover::after {
-    content: "Desabafo | MC GP, Tuto e Kadu" "\A ⁠Direção de Produção e Produção Executiva";
-    white-space: pre;
-}
-#hypebeast:hover::after {
-    content: "Hypebeast | Whatsapp" "\A ⁠1ª Assistente de Produção";
+#pedro_sampaio:hover::after {
+    content: "Pedro Sampaio, MC Tato | JOIA RARA" "\A 1ª Assistente de Produção";
     white-space: pre;
 }
 #mc_lan:hover::after {
@@ -125,23 +105,43 @@ html{
     white-space: pre;
 }
 #tchau_bella:hover::after {
-    content: "TCHAU, BELLA! | Netflix Brasil" "\A ⁠Direção de Produção e Produção Executiva";
+    content: "TCHAU, BELLA! | Netflix Brasil" "\A 2ª Assistente de Produção";
     white-space: pre;
 }
 #se_joga_no_boom:hover::after {
-    content: "SE JOGA NO BOOM | Free Fire" "\A ⁠Direção de Produção e Produção Executiva";
+    content: "SE JOGA NO BOOM | Free Fire" "\A 1ª Assistente de Produção";
     white-space: pre;
 }
 #texaco:hover::after {
-    content: "Texaco" "\A Assistente de Produção ";
+    content: "Texaco" "\A ⁠Assistente de Produção de Locação ";
     white-space: pre;
 }
 #volkswagen:hover::after {
     content: "Volkswagen | Tiguan" "\A 1ª Assistente de Produção";
     white-space: pre;
 }
+#beijo_adolescente:hover::after {
+    content: "Beijo Adolescente | MAX" "\A Aux. de Produção de Biossegurança";
+    white-space: pre;
+}
+#hotwhells:hover::after {
+    content: "Hotwhells | SBT" "\A ⁠Produtora";
+    white-space: pre;
+}
+#claro:hover::after {
+    content: "Claro | Copa" "\A ⁠2ª Assistente de Produção";
+    white-space: pre;
+}
+#deezer:hover::after {
+    content: "Deezer" "\A ⁠1ª Assistente de Produção";
+    white-space: pre;
+}
 #globoplay:hover::after {
-    content: "GLOBOPLAY | 40M²" "\A ⁠Direção de Produção e Produção Executiva";
+    content: "GLOBOPLAY | 40M²" "\A Produtora";
+    white-space: pre;
+}
+#hypebeast:hover::after {
+    content: "Hypebeast | Whatsapp" "\A ⁠1ª Assistente de Produção";
     white-space: pre;
 }
 
