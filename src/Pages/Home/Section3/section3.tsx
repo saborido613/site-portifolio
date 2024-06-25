@@ -187,7 +187,6 @@ function Section3() {
                 custom-after
                 selection-item-image
                 text-[0.5rem]
-                md:text-[0.6rem]
                 lg:text-xl"
           id="pouco_papo"
         >

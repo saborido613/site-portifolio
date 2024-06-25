@@ -36,7 +36,7 @@ function Section2() {
             font-bold
             text-black"
       >
-        <h2>EMPRESAS QUE ACREDITARAM NO MEU TRABALHO</h2>
+        <h2>EMPRESAS E MARCAS</h2>
       </div>
 
       <div
