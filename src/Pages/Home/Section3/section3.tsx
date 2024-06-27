@@ -20,6 +20,8 @@ import Se_Joga_No_Boom from "/img/SE_JOGA_NO_BOOM_FREE_FIRE_THUMB.jpg";
 import Texaco from "/img/WhatsApp Image 2024-06-18 at 20.52.54.jpeg";
 import Volkswagen from "/img/WhatsApp Image 2024-06-18 at 20.55.19.jpeg";
 import Globoplay from "/img/40m2_globoplay_thumb.jpg";
+import Baile_da_Thays from "/img/Baile_da_thays.jpeg";
+import Para_Cine from "/img/PARA_CINE.jpeg";
 
 function Section3() {
   return (
@@ -385,6 +387,36 @@ function Section3() {
         >
           <a href="https://www.instagram.com/reel/CmewoQZooIb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
             <img src={HypeBeast} alt="" />
+          </a>
+        </div>
+        <div
+          className="flex 
+                justify-center 
+                relative 
+                custom-after
+                selection-item-image
+                text-[0.3rem]
+                md:text-[0.6rem]
+                lg:text-xl"
+          id="baile_da_thays"
+        >
+          <a href="https://www.instagram.com/reel/C3yPMTIJJry/?igsh=eWw5YnNpdXllem93">
+            <img src={Baile_da_Thays} alt="" />
+          </a>
+        </div>
+        <div
+          className="flex 
+                justify-center 
+                relative 
+                custom-after
+                selection-item-image
+                text-[0.5rem]
+                md:text-[0.6rem]
+                lg:text-xl"
+          id="paracine"
+        >
+          <a href="https://www.instagram.com/reel/C8DbqaKxn6s/?igsh=OHc0Z3FwYXZhZTJh">
+            <img src={Para_Cine} alt="" />
           </a>
         </div>
       </div>

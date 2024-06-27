@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        archivo: ['Archivo', 'sans-serif']
+        'Gza': ['Gza', 'Helvetica', 'Arial', 'sans-serif']
       }
     },
   },

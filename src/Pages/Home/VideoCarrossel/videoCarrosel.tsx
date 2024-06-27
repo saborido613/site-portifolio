@@ -11,23 +11,23 @@ import Nav from "../../Componentes/Nav/nav";
 
 const videos = [
   {
-    src: "/Videos/FREE FIRE X ANITTA   TROPA FTLUCK MUZIK   CLIPE OFICIAL   Garena Free Fir[1].mp4",
+    src: "/Videos/Anitta - Free Fire.mp4",
     type: "video/mp4",
   },
   {
-    src: "/Videos/Consórcio Honda   Facilitadão (Clipe Oficial[1].mp4",
+    src: "/Videos/facilitadao.mp4",
     type: "video/mp4",
   },
   {
-    src: "/Videos/VEIGH   Nois é Nois (Clipe Oficial[1].mp4",
+    src: "/Videos/VEIGH - Nois é Nois (Clipe Oficial).mp4",
     type: "video/mp4",
   },
   {
-    src: "/Videos/IZA x Olympikus   Boombasstic (O MOVIMENTO.mp4",
+    src: "/Videos/Iza - O Movimento.mp4",
     type: "video/mp4",
   },
   {
-    src: "/Videos/Snapinsta.app_video_An8VJcVpffYdXPYAukAqzpfbyiO6nlbtSGzXnIvVytT3qYZUkLQOeKE7Tng6nxY-qBDOj2oFzSVE3fMrIonKgZvw.mp4",
+    src: "/Videos/Pizza Hut - Melts.mp4",
     type: "video/mp4",
   },
 ];
@@ -47,7 +47,7 @@ const VideoCarousel: React.FC = () => {
 
         {videos.map((video, index) => (
           <SwiperSlide key={index} className="flex items-center justify-center">
-            <video className="w-full h-full object-cover" autoPlay muted loop>
+            <video className="w-full h-full object-cover" autoPlay muted loop playsInline>
               <source src={video.src} type={video.type} />
               Your browser does not support the video tag.
             </video>

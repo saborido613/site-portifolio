@@ -31,8 +31,11 @@ function Infos() {
 
         <p className="mt-6 text-sm lg:text-xl text-white text-justify">
           Co-fundadora do{" "}
-          <span className="text-gray-400">Projeto Paracine</span> (@para_cine),
-          que tem o intuito de{" "}
+          <span className="text-gray-400">Projeto Paracine</span>{" "}
+          <a href="https://www.instagram.com/para_cine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            (@para_cine)
+          </a>
+          , que tem o intuito de{" "}
           <span className="text-gray-400">democratizar o acesso</span> ao
           audiovisual para jovens e adultos de todas as favelas de São Paulo,
           com aulas, workshops e exibições de curtas-metragens,{" "}

@@ -26,18 +26,10 @@ html{
     font-family: "Kanit", 'sans-serif';
   }
 
-  @font-face {
-    font-family: 'Gza';
-    src: url('fonts/Gza-SemiBoldItalic.ttf') format('truetype'), 
-         url('fonts/Gza-SemiBoldItalic.woff') format('woff'),
-         url('fonts/Gza-SemiBoldItalic.woff2') format('woff2');
-
-    font-weight: normal;
-    font-style: normal;
-    }
-
     .fonte-personalizada {
-        font-family: 'Gza';
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: italic;
     }
 
 
@@ -142,6 +134,14 @@ html{
 }
 #hypebeast:hover::after {
     content: "Hypebeast | Whatsapp" "\A ⁠1ª Assistente de Produção";
+    white-space: pre;
+}
+#baile_da_thays:hover::after {
+    content: "Baile da Thays" "\A Produção do Evento e Produção Artística, Planejamento Estratégico ";
+    white-space: pre;
+}
+#paracine:hover::after {
+    content: "Paracine" "\A Co-Fundadora do Projeto Paracine e Produtora";
     white-space: pre;
 }
 
