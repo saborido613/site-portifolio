@@ -1,5 +1,5 @@
 enum Path {
-  HOME = "/e",
+  HOME = "/",
   INFOS = "/infos",
 }
 
