@@ -79,7 +79,7 @@ export const brands: Brand[] = [
   { name: "Pedigree", href: null, img: "/img/pedigree_logo.png" },
   { name: "iFood", href: null, img: "/img/ifood.png" },
   { name: "Pizza Hut", href: null, img: "/img/pizza_hut.png" },
-  { name: "Versão 1", href: "https://www.instagram.com/reel/C3yPMTIJJry/", img: "/img/Versão 1.png" },
+  { name: "th4ys", href: "https://www.instagram.com/reel/C3yPMTIJJry/", img: "/img/th4ys.png" },
   { name: "Volkswagen", href: "https://www.instagram.com/p/Czw0zolPana/", img: "/img/volkswagen_logo.png" },
 ];
 
