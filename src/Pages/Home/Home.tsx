@@ -1,13 +1,13 @@
-import Section2 from "./Section2/section2";
-import Section3 from "./Section3/section3";
-import VideoCarousel from "./VideoCarrossel/videoCarrosel";
+import HeroVideoSlider from "./HeroVideoSlider";
+import SectionBrands from "./SectionBrands";
+import SectionPortfolio from "./SectionPortfolio";
 
 function Home() {
   return (
     <>
-      <VideoCarousel />
-      <Section2 />
-      <Section3 />
+      <HeroVideoSlider />
+      <SectionBrands />
+      <SectionPortfolio />
     </>
   );
 }

@@ -1,6 +1,6 @@
 enum Path {
-    HOME = '/',
-    INFOS = '/infos'
+  HOME = "/e",
+  INFOS = "/infos",
 }
 
-export default Path; 
+export default Path;

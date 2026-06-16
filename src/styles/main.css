@@ -1,173 +1,1323 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* --------------------------------------------------
+ VIC ALMEIDA - PREMIUM AUDIOVISUAL PORTFOLIO
+ DESIGN SYSTEM & CUSTOM CORE STYLES (VANILLA CSS)
+-------------------------------------------------- */
 
-.menu-button {
-    display: none;
-}
-@media (max-width: 768px) {
-    .menu-button {
-        display: inline-block;
-    }
-    .nav-items {
-        display: none;
-    }
-    .nav-items.expanded {
-        display: block;
-    }
-}
-
-html{
-    scroll-behavior: smooth;
-
-  }
-
-  body {
-    font-family: "Kanit", 'sans-serif';
-  }
-
-    .fonte-personalizada {
-      font-family: "Libre Baskerville", serif;
-      font-weight: 400;
-      font-style: italic;
-    }
-
-
-
-.custom-after:hover::after {
-    content: "";
-    display: block;
-    color: #fff; 
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    font-family: "Kanit" , 'sans-serif';
-    
-
-  }
-
-
-#ze_felipe:hover::after {
-    content: "Zé Felipe | Coloca o Capacete" "\A 2ª Assistente de Produção";
-    white-space: pre;
-}
-#negao_original:hover::after {
-    content: "MC Negão Original | Espaço de Voz" "\A Direção de Produção e Produção Executiva";
-    white-space: pre;
-}
-#desabafo:hover::after {
-    content: "Desabafo | MC GP, Tuto e Kadu" "\A ⁠Direção de Produção e Produção Executiva";
-    white-space: pre;
-}
-#arana_livinho:hover::after {
-    content: "MC Livinho, DJ Arana e DJ Jeeh FDC | AMOR É MENTIRA" "\A Direção de Produção, Produção Executiva e Assistência Criativa";
-    white-space: pre;
-    
-}
-#anitta_hitmaker:hover::after {
-    content: "Anitta feat. HITMAKER | NU" "\A Assistente de Coord. Hungry Man e 1ª Assist. Produção";
-    white-space: pre;
-}
-#anitta_ryan:hover::after {
-    content: "Anitta feat. Ryan SP | VAI VENDO" "\A Assistente de Coord. Hungry Man e 1ª Assist. Produção";
-    white-space: pre;
-}
-#pedro_sampaio:hover::after {
-    content: "Pedro Sampaio, MC Tato | JOIA RARA" "\A 1ª Assistente de Produção";
-    white-space: pre;
-}
-#mc_lan:hover::after {
-    content: "Mete Love | MC Lan e Kotim" "\A ⁠Direção de Produção e Produção Executiva";
-    white-space: pre;
-}
-#pecinha:hover::after {
-    content: "PECINHA NÍVEL 10 | DJ Arana, Yuri Redicopa e Meno Saaint " "\A ⁠Direção de Produção e Produção Executiva";
-    white-space: pre;
-}
-#pouco_papo:hover::after {
-    content: "POUCO PAPO E MUITO VAPO | DJ Jeeh FDC e MC Arcanjo" "\A ⁠Direção de Produção e Produção Executiva";
-    white-space: pre;
-}
-#sentido_e_o_baile:hover::after {
-    content: "SENTIDO É O BAILE | Luana Maia e DJ KLP" "\A ⁠Direção de Produção e Produção Executiva";
-    white-space: pre;
-}
-#sesh_delas:hover::after {
-    content: "SESH DELAS | Nivy" "\A ⁠Direção de Produção e Produção Executiva";
-    white-space: pre;
-}
-#tchau_bella:hover::after {
-    content: "TCHAU, BELLA! | Netflix Brasil" "\A 2ª Assistente de Produção";
-    white-space: pre;
-}
-#se_joga_no_boom:hover::after {
-    content: "SE JOGA NO BOOM | Free Fire" "\A 1ª Assistente de Produção";
-    white-space: pre;
-}
-#texaco:hover::after {
-    content: "Texaco" "\A ⁠Assistente de Produção de Locação ";
-    white-space: pre;
-}
-#volkswagen:hover::after {
-    content: "Volkswagen | Tiguan" "\A 1ª Assistente de Produção";
-    white-space: pre;
-}
-#beijo_adolescente:hover::after {
-    content: "Beijo Adolescente | MAX" "\A Aux. de Produção de Biossegurança";
-    white-space: pre;
-}
-#hotwhells:hover::after {
-    content: "Hotwhells | SBT" "\A ⁠Produtora";
-    white-space: pre;
-}
-#claro:hover::after {
-    content: "Claro | Copa" "\A ⁠2ª Assistente de Produção";
-    white-space: pre;
-}
-#deezer:hover::after {
-    content: "Deezer" "\A ⁠1ª Assistente de Produção";
-    white-space: pre;
-}
-#globoplay:hover::after {
-    content: "GLOBOPLAY | 40M²" "\A Produtora";
-    white-space: pre;
-}
-#hypebeast:hover::after {
-    content: "Hypebeast | Whatsapp" "\A ⁠1ª Assistente de Produção";
-    white-space: pre;
-}
-#baile_da_thays:hover::after {
-    content: "Baile da Thays" "\A Produção do Evento e Produção Artística, Planejamento Estratégico ";
-    white-space: pre;
-}
-#paracine:hover::after {
-    content: "Paracine" "\A Co-Fundadora do Projeto Paracine e Produtora";
-    white-space: pre;
-}
-
-.selection-item-image {
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-  }
-  
-  .selection-item-image:hover img {
-    transform: scale(1.20);
-  }
-  
-  .selection-item-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 1s ease;
-    
-  }
-
+:root {
+ /* Cores Principais */
+ --bg-dark: #060609;
+ --bg-dark-rgb: 6, 6, 9;
+ --text-light: #f3f4f6;
+ --text-muted: #9ca3af;
+ --accent: #ffffff;
+ --accent-rgb: 255, 255, 255;
  
-
-
+ /* Efeitos de Glow */
+ --glow-blue: rgba(29, 78, 216, 0.18);
+ --glow-amber: rgba(217, 119, 6, 0.12);
  
-  
+ /* Glassmorphism Defaults */
+ --glass-bg: rgba(13, 13, 21, 0.65);
+ --glass-border: rgba(255, 255, 255, 0.08);
+ --glass-border-hover: rgba(255, 255, 255, 0.18);
+ 
+ /* Fontes */
+ --font-sans: 'Inter', sans-serif;
+ --font-title: 'Kanit', sans-serif;
+ --font-serif: 'Libre Baskerville', serif;
+}
+
+/* 1. Reset & Configurações Globais */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html {
+ scroll-behavior: smooth;
+ background-color: var(--bg-dark);
+}
+
+body {
+ font-family: var(--font-sans);
+ background-color: var(--bg-dark);
+ color: var(--text-light);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+img, video {
+ max-width: 100%;
+ display: block;
+}
+
+a {
+ color: inherit;
+ text-decoration: none;
+}
+
+button {
+ background: none;
+ border: none;
+ cursor: pointer;
+ font-family: inherit;
+ color: inherit;
+ outline: none;
+}
+
+/* Ocultar scrollbar mantendo funcionalidade */
+.overflow-x-hidden {
+ overflow-x: hidden;
+}
+
+/* 2. Efeitos Cinemáticos de Fundo */
+.ambient-glow {
+ position: fixed;
+ width: 60vw;
+ height: 60vw;
+ border-radius: 50%;
+ pointer-events: none;
+ z-index: -1;
+ filter: blur(140px);
+ opacity: 0.6;
+ transition: all 1s ease;
+}
+
+.glow-1 {
+ background: var(--glow-blue);
+ top: -10vw;
+ right: -10vw;
+}
+
+.glow-2 {
+ background: var(--glow-amber);
+ bottom: -15vw;
+ left: -10vw;
+}
+
+/* 3. Containers */
+.container {
+ width: 100%;
+ max-width: 1280px;
+ margin: 0 auto;
+ padding: 0 2rem;
+}
+
+.container-narrow {
+ width: 100%;
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 0 2rem;
+}
+
+/* 4. Navbar Premium (Glassmorphism) */
+.navbar-glass {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 100;
+ padding: 2.2rem 0;
+ transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Estado da navbar ao rolar */
+.navbar-glass.scrolled {
+ padding: 1.2rem 0;
+ background-color: rgba(6, 6, 9, 0.75);
+ backdrop-filter: blur(16px);
+ -webkit-backdrop-filter: blur(16px);
+ border-bottom: 1px solid var(--glass-border);
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ max-width: 1280px;
+ margin: 0 auto;
+ padding: 0 2rem;
+}
+
+.logo-link {
+ display: flex;
+ align-items: center;
+}
+
+.nav-logo {
+ height: 1.5rem;
+ width: auto;
+ transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+ transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+ .nav-logo {
+ height: 1.8rem;
+ }
+}
+
+.nav-links-desktop {
+ display: none;
+ align-items: center;
+ gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+ .nav-links-desktop {
+ display: flex;
+ }
+}
+
+.nav-link-btn {
+ font-family: var(--font-sans);
+ font-size: 1.05rem;
+ font-weight: 500;
+ color: var(--text-light);
+ letter-spacing: 0.05em;
+ transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efeito Glow no texto */
+.text-hover-glow:hover {
+ color: #fff;
+ text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.social-links {
+ display: flex;
+ align-items: center;
+ gap: 1.25rem;
+ border-left: 1px solid rgba(255, 255, 255, 0.15);
+ padding-left: 1.5rem;
+}
+
+.social-links a {
+ color: var(--text-muted);
+ transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+ color: #fff;
+ transform: translateY(-2px);
+}
+
+.icon {
+ width: 1.4rem;
+ height: 1.4rem;
+}
+
+/* Botão do Menu Mobile */
+.mobile-menu-toggle {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 2.5rem;
+ height: 2.5rem;
+ border-radius: 50%;
+ background: rgba(255, 255, 255, 0.05);
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ transition: background 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+ background: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+ .mobile-menu-toggle {
+ display: none;
+ }
+}
+
+.icon-toggle {
+ width: 1.5rem;
+ height: 1.5rem;
+}
+
+/* Animação Hamburger para X */
+.icon-toggle line {
+ transition: transform 0.3s ease, opacity 0.3s ease;
+ transform-origin: center;
+}
+
+.mobile-menu-toggle.active .line-mid {
+ opacity: 0;
+}
+
+.mobile-menu-toggle.active .line-top {
+ transform: translateY(6px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active .line-bottom {
+ transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Menu Dropdown Mobile */
+.mobile-nav-menu {
+ position: absolute;
+ top: 100%;
+ right: 2rem;
+ width: calc(100% - 4rem);
+ max-width: 300px;
+ background: rgba(10, 10, 15, 0.95);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ border: 1px solid var(--glass-border);
+ border-radius: 12px;
+ padding: 1.5rem;
+ display: flex;
+ flex-direction: column;
+ gap: 1.25rem;
+ transform: translateY(15px);
+ opacity: 0;
+ pointer-events: none;
+ transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+ box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.mobile-nav-menu.active {
+ transform: translateY(5px);
+ opacity: 1;
+ pointer-events: auto;
+}
+
+.mobile-nav-link {
+ font-size: 1.2rem;
+ font-weight: 500;
+ text-align: right;
+ padding: 0.5rem 0;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+ transition: color 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+ color: #fff;
+}
+
+.mobile-socials {
+ display: flex;
+ justify-content: flex-end;
+ gap: 1.5rem;
+ padding-top: 0.5rem;
+}
+
+.mobile-socials a {
+ color: var(--text-muted);
+}
+
+.mobile-socials a:hover {
+ color: #fff;
+}
+
+/* 5. Hero Video Slider (Fullscreen) */
+.hero-video-slider {
+ position: relative;
+ width: 100%;
+ height: 100vh;
+ background-color: #000;
+ z-index: 1;
+}
+
+.hero-swiper {
+ width: 100%;
+ height: 100%;
+}
+
+.hero-swiper .swiper-slide {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: flex-end;
+ justify-content: flex-start;
+ padding: 0 2rem 6rem;
+ overflow: hidden;
+}
+
+@media (min-width: 768px) {
+ .hero-swiper .swiper-slide {
+ padding: 0 6rem 8rem;
+ }
+}
+
+.hero-bg-video {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ z-index: -2;
+}
+
+/* Gradiente escuro sobre o vídeo para legibilidade */
+.video-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(
+ to bottom,
+ rgba(6, 6, 9, 0.6) 0%,
+ rgba(6, 6, 9, 0.2) 40%,
+ rgba(6, 6, 9, 0.85) 100%
+ );
+ z-index: -1;
+}
+
+.slide-caption-wrapper {
+ max-width: 650px;
+ z-index: 10;
+ transform: translateY(30px);
+ opacity: 0;
+ transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Quando o slide fica ativo, animamos a legenda */
+.swiper-slide-active .slide-caption-wrapper {
+ transform: translateY(0);
+ opacity: 1;
+}
+
+.slide-category {
+ font-size: 0.85rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.2em;
+ color: var(--text-muted);
+ display: inline-block;
+ margin-bottom: 0.75rem;
+ text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.slide-title {
+ font-family: var(--font-title);
+ font-size: 2.25rem;
+ font-weight: 800;
+ line-height: 1.1;
+ letter-spacing: -0.02em;
+ margin-bottom: 1.8rem;
+ text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+ .slide-title {
+ font-size: 4rem;
+ }
+}
+
+/* Botão de Ação do Hero */
+.btn-primary {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.75rem;
+ background-color: var(--accent);
+ color: var(--bg-dark);
+ font-family: var(--font-sans);
+ font-size: 0.95rem;
+ font-weight: 600;
+ letter-spacing: 0.02em;
+ padding: 0.9rem 1.8rem;
+ border-radius: 50px;
+ box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+ transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+ background-color: #e5e7eb;
+ transform: translateY(-3px);
+ box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25);
+}
+
+.btn-primary:active {
+ transform: translateY(-1px);
+}
+
+.play-icon {
+ width: 1.2rem;
+ height: 1.2rem;
+}
+
+/* Paginação e Navegação customizadas do Hero */
+.hero-swiper-pagination.swiper-pagination-bullets {
+ bottom: 3.5rem;
+ left: auto;
+ right: 2rem;
+ width: auto;
+ z-index: 10;
+}
+
+@media (min-width: 768px) {
+ .hero-swiper-pagination.swiper-pagination-bullets {
+ right: 6rem;
+ }
+}
+
+.hero-swiper-pagination .swiper-pagination-bullet {
+ background: rgba(255, 255, 255, 0.3);
+ opacity: 1;
+ width: 1.8rem;
+ height: 4px;
+ border-radius: 2px;
+ transition: all 0.4s ease;
+}
+
+.hero-swiper-pagination .swiper-pagination-bullet-active {
+ background: #fff;
+ width: 3rem;
+ box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Setas de navegação desktop */
+.hero-swiper-next, .hero-swiper-prev {
+ display: none !important;
+ color: #fff !important;
+ width: 3.5rem !important;
+ height: 3.5rem !important;
+ background: rgba(0, 0, 0, 0.3);
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ border-radius: 50%;
+ backdrop-filter: blur(4px);
+ transition: all 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+ .hero-swiper-next, .hero-swiper-prev {
+ display: flex !important;
+ }
+}
+
+.hero-swiper-next::after, .hero-swiper-prev::after {
+ font-size: 1.2rem !important;
+ font-weight: bold;
+}
+
+.hero-swiper-next:hover, .hero-swiper-prev:hover {
+ background: rgba(255, 255, 255, 0.1);
+ border-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-swiper-next { right: 2rem !important; }
+.hero-swiper-prev { left: 2rem !important; }
+
+/* 6. Seção de Empresas e Marcas (Branco Contrastante Premium) */
+.section-brands {
+ padding: 3.5rem 0;
+ background-color: #ffffff;
+ color: #060609;
+ position: relative;
+ z-index: 2;
+ box-shadow: 0 10px 50px rgba(0,0,0,0.15);
+}
+
+.section-header {
+ margin-bottom: 4rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.section-subtitle {
+ font-size: 0.8rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.25em;
+ color: var(--text-muted);
+ margin-bottom: 0.5rem;
+}
+
+.section-title {
+ font-family: var(--font-title);
+ font-size: 2rem;
+ font-weight: 800;
+ letter-spacing: -0.01em;
+ text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+ .section-title {
+ font-size: 2.6rem;
+ }
+}
+
+.header-divider {
+ width: 4rem;
+ height: 3px;
+ background-color: #060609;
+ margin-top: 1.25rem;
+}
+
+.header-divider.left-aligned {
+ margin-left: 0;
+ background-color: var(--text-light);
+}
+
+
+/* Faixa horizontal de marcas (edge-to-edge) */
+.brands-marquee {
+ width: 100%;
+ overflow: hidden;
+ padding: 0.5rem 0;
+ -webkit-mask-image: linear-gradient(
+  to right,
+  transparent 0%,
+  #000 8%,
+  #000 92%,
+  transparent 100%
+ );
+ mask-image: linear-gradient(
+  to right,
+  transparent 0%,
+  #000 8%,
+  #000 92%,
+  transparent 100%
+ );
+}
+
+.brands-marquee-inner {
+ display: flex;
+ width: max-content;
+ animation: brands-marquee-scroll 45s linear infinite;
+}
+
+.brands-marquee-track {
+ display: flex;
+ align-items: center;
+ flex: 0 0 auto;
+ gap: 3.5rem;
+ padding: 0 2rem;
+}
+
+.brands-marquee:hover .brands-marquee-inner {
+ animation-play-state: paused;
+}
+
+@keyframes brands-marquee-scroll {
+ from {
+  transform: translateX(0);
+ }
+ to {
+  transform: translateX(-50%);
+ }
+}
+
+@media (min-width: 768px) {
+ .brands-marquee-track {
+  gap: 5rem;
+  padding: 0 3rem;
+ }
+}
+
+@media (prefers-reduced-motion: reduce) {
+ .brands-marquee {
+  overflow-x: auto;
+  -webkit-mask-image: none;
+  mask-image: none;
+ }
+
+ .brands-marquee-inner {
+  animation: none;
+ }
+
+ .brands-marquee-track--clone {
+  display: none;
+ }
+}
+
+.brand-item {
+ display: flex;
+ flex: 0 0 auto;
+ align-items: center;
+ justify-content: center;
+ width: 7rem;
+ height: 4rem;
+ transition: all 0.4s ease;
+}
+
+.brand-item img {
+ max-height: 3.5rem;
+ max-width: 7rem;
+ width: auto;
+ height: auto;
+ object-fit: contain;
+ filter: grayscale(1) opacity(0.5);
+ transition: all 0.4s ease;
+}
+
+/* Hover interativo nas logos */
+.brand-item:hover img {
+ filter: grayscale(0) opacity(1);
+ transform: scale(1.08);
+}
+
+.brand-item.no-link {
+ cursor: default;
+}
+
+/* 7. Seção de Portfólio (Grid de Cards Cinemáticos) */
+.section-portfolio {
+ padding: 8rem 0;
+ background-color: var(--bg-dark);
+ position: relative;
+ z-index: 2;
+}
+
+.section-portfolio .section-title {
+ color: #fff;
+ text-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.section-portfolio .header-divider {
+ background-color: #fff;
+}
+
+.portfolio-grid {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 1rem;
+}
+
+@media (min-width: 768px) {
+ .portfolio-grid {
+  gap: 1.5rem;
+ }
+}
+
+@media (min-width: 1024px) {
+ .portfolio-grid {
+  gap: 2rem;
+ }
+}
+
+/* Card de Portfólio Premium */
+.portfolio-card {
+ position: relative;
+ flex: 0 1 calc((100% - 1rem) / 2);
+ max-width: calc((100% - 1rem) / 2);
+ aspect-ratio: 16 / 9;
+ border-radius: 8px;
+ overflow: hidden;
+ background-color: rgba(255, 255, 255, 0.02);
+ border: 1px solid rgba(255, 255, 255, 0.05);
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+ cursor: pointer;
+ transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+ text-align: left;
+}
+
+@media (min-width: 768px) {
+ .portfolio-card {
+  flex: 0 1 calc((100% - 1.5rem) / 2);
+  max-width: calc((100% - 1.5rem) / 2);
+ }
+}
+
+@media (min-width: 1024px) {
+ .portfolio-card {
+  flex: 0 1 calc((100% - 4rem) / 3);
+  max-width: calc((100% - 4rem) / 3);
+ }
+}
+
+.card-image-wrapper {
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+
+.card-image-wrapper img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(
+ to top,
+ rgba(6, 6, 9, 0.95) 0%,
+ rgba(6, 6, 9, 0.4) 50%,
+ rgba(6, 6, 9, 0.1) 100%
+ );
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: flex-start;
+ padding: 1rem;
+ opacity: 0.9;
+ transition: opacity 0.4s ease, background 0.4s ease;
+}
+
+@media (min-width: 768px) {
+ .card-overlay {
+ padding: 1.5rem;
+ opacity: 0.85;
+ }
+}
+
+.play-badge {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) scale(0.8);
+ width: 3.5rem;
+ height: 3.5rem;
+ background-color: #fff;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: var(--bg-dark);
+ opacity: 0;
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+ transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.play-svg {
+ width: 1.6rem;
+ height: 1.6rem;
+ margin-left: 0.2rem; /* Ajuste óptico de centralização do triângulo */
+}
+
+.card-info {
+ width: 100%;
+ text-align: left;
+ transform: translateY(10px);
+ transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-category {
+ font-size: 0.7rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.15em;
+ color: var(--text-muted);
+ margin-bottom: 0.25rem;
+ display: block;
+}
+
+.card-project-title {
+ font-family: var(--font-title);
+ font-size: 1.1rem;
+ font-weight: 700;
+ line-height: 1.2;
+ color: #ffffff;
+ margin-bottom: 0.15rem;
+}
+
+@media (min-width: 768px) {
+ .card-project-title {
+ font-size: 1.35rem;
+ }
+}
+
+.card-artist {
+ font-size: 0.85rem;
+ color: var(--text-muted);
+}
+
+/* Hover do Card de Portfólio */
+.portfolio-card:hover {
+ transform: translateY(-6px);
+ border-color: rgba(255, 255, 255, 0.18);
+ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-card:hover img {
+ transform: scale(1.06);
+}
+
+.portfolio-card:hover .card-overlay {
+ opacity: 1;
+ background: linear-gradient(
+ to top,
+ rgba(6, 6, 9, 0.98) 0%,
+ rgba(6, 6, 9, 0.5) 60%,
+ rgba(6, 6, 9, 0.2) 100%
+ );
+}
+
+.portfolio-card:hover .play-badge {
+ opacity: 1;
+ transform: translate(-50%, -50%) scale(1);
+}
+
+.portfolio-card:hover .card-info {
+ transform: translateY(0);
+}
+
+/* 8. PÁGINA 2: SOBRE MIM (INFOS) */
+.section-biography {
+ padding: 9rem 0 4rem;
+}
+
+.back-home-btn {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.6rem;
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: var(--text-muted);
+ margin-bottom: 2.5rem;
+ transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-home-btn:hover {
+ color: #fff;
+ transform: translateX(-4px);
+ text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.icon-back {
+ width: 1.1rem;
+ height: 1.1rem;
+}
+
+.bio-header {
+ margin-bottom: 3rem;
+}
+
+.bio-tag {
+ font-size: 0.8rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.25em;
+ color: var(--text-muted);
+ margin-bottom: 0.75rem;
+ display: block;
+}
+
+.bio-main-title {
+ font-family: var(--font-title);
+ font-size: 2.2rem;
+ font-weight: 800;
+ line-height: 1.15;
+ color: #fff;
+ letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px) {
+ .bio-main-title {
+ font-size: 3.2rem;
+ }
+}
+
+.bio-content {
+ font-size: 1rem;
+ color: #d1d5db;
+}
+
+@media (min-width: 768px) {
+ .bio-content {
+ font-size: 1.2rem;
+ }
+}
+
+.lead-text {
+ font-family: var(--font-serif);
+ font-style: italic;
+ font-size: 1.25rem;
+ line-height: 1.6;
+ color: #f3f4f6;
+ margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+ .lead-text {
+ font-size: 1.6rem;
+ }
+}
+
+.normal-text {
+ margin-bottom: 1.75rem;
+ text-align: justify;
+}
+
+.highlight-text {
+ color: #ffffff;
+ font-weight: 600;
+ position: relative;
+ display: inline-block;
+}
+
+.highlight-text::after {
+ content: '';
+ position: absolute;
+ bottom: 2px;
+ left: 0;
+ width: 100%;
+ height: 1px;
+ background-color: rgba(255, 255, 255, 0.4);
+}
+
+.inline-link {
+ color: #fff;
+ font-weight: 500;
+ text-decoration: underline;
+ text-underline-offset: 4px;
+}
+
+/* Carrossel Swiper de Fotos na Bio */
+.section-bio-gallery {
+ padding: 4rem 0 6rem;
+}
+
+.gallery-swiper {
+ width: 100%;
+ padding-bottom: 4rem !important; /* Espaço para paginação */
+}
+
+.gallery-swiper .swiper-slide {
+ border-radius: 12px;
+ overflow: hidden;
+ aspect-ratio: 4 / 3;
+ border: 1px solid rgba(255, 255, 255, 0.05);
+ box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+ background-color: rgba(255, 255, 255, 0.02);
+}
+
+@media (min-width: 768px) {
+ .gallery-swiper .swiper-slide {
+ aspect-ratio: 16 / 10;
+ }
+}
+
+.gallery-swiper img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+/* Paginação da Galeria */
+.gallery-swiper-pagination .swiper-pagination-bullet {
+ background: rgba(255, 255, 255, 0.2);
+ opacity: 1;
+}
+
+.gallery-swiper-pagination .swiper-pagination-bullet-active {
+ background: #fff;
+ box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.gallery-swiper-next, .gallery-swiper-prev {
+ color: #fff !important;
+ transition: all 0.3s ease;
+}
+
+.gallery-swiper-next:hover, .gallery-swiper-prev:hover {
+ transform: scale(1.1);
+}
+
+.gallery-swiper-next::after, .gallery-swiper-prev::after {
+ font-size: 1.5rem !important;
+}
+
+/* 9. Seção de Contatos e Rodapé */
+.section-contacts {
+ padding: 4rem 0 8rem;
+}
+
+.contacts-title {
+ font-family: var(--font-title);
+ font-size: 1.8rem;
+ font-weight: 700;
+ color: #fff;
+ margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+ .contacts-title {
+ font-size: 2.2rem;
+ }
+}
+
+.contacts-grid {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 1.5rem;
+ margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+ .contacts-grid {
+ grid-template-columns: repeat(2, 1fr);
+ gap: 2rem;
+ }
+}
+
+/* Glassmorphism Cards de Contato */
+.glass-card {
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ border-radius: 12px;
+ padding: 1.8rem;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+ transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+ border-color: var(--glass-border-hover);
+ box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255,255,255,0.02);
+}
+
+.contact-label {
+ font-size: 0.75rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.15em;
+ color: var(--text-muted);
+}
+
+.contact-value {
+ font-family: var(--font-title);
+ font-size: 1.3rem;
+ font-weight: 600;
+ color: #ffffff;
+ word-break: break-all;
+}
+
+@media (min-width: 768px) {
+ .contact-value {
+ font-size: 1.6rem;
+ }
+}
+
+/* Wrapper especial para o e-mail (copiar) */
+.email-click-wrapper {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 1rem;
+}
+
+.copy-email-btn {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 2.8rem;
+ height: 2.8rem;
+ border-radius: 50%;
+ background: rgba(255, 255, 255, 0.04);
+ border: 1px solid rgba(255, 255, 255, 0.08);
+ color: var(--text-muted);
+ transition: all 0.3s ease;
+}
+
+.copy-email-btn:hover {
+ background: rgba(255, 255, 255, 0.1);
+ border-color: rgba(255, 255, 255, 0.2);
+ color: #fff;
+}
+
+.icon-copy {
+ width: 1.2rem;
+ height: 1.2rem;
+}
+
+/* Tooltip do E-mail Copiado */
+.tooltip-text {
+ position: absolute;
+ bottom: 120%;
+ left: 50%;
+ transform: translateX(-50%) translateY(5px);
+ background-color: #ffffff;
+ color: #060609;
+ font-size: 0.75rem;
+ font-weight: 600;
+ padding: 0.4rem 0.8rem;
+ border-radius: 4px;
+ pointer-events: none;
+ opacity: 0;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+ white-space: nowrap;
+}
+
+.tooltip-text::after {
+ content: "";
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ transform: translateX(-50%);
+ border-width: 5px;
+ border-style: solid;
+ border-color: #ffffff transparent transparent transparent;
+}
+
+.copy-email-btn:hover .tooltip-text {
+ opacity: 1;
+ transform: translateX(-50%) translateY(0);
+}
+
+.copy-email-btn.copied .tooltip-text {
+ background-color: #10b981; /* Verde esmeralda */
+ color: #fff;
+}
+
+.copy-email-btn.copied .tooltip-text::after {
+ border-color: #10b981 transparent transparent transparent;
+}
+
+/* Rodapé */
+.bio-footer {
+ margin-top: 8rem;
+ display: flex;
+ justify-content: center;
+}
+
+.footer-logo {
+ width: 3rem;
+ height: auto;
+ opacity: 0.5;
+ transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+ opacity: 0.9;
+}
+
+/* 10. MODAL DO PLAYER DE VÍDEO PREMIUM */
+.video-modal-backdrop {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background-color: rgba(4, 4, 6, 0.88);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ z-index: 200;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+ padding: 1.5rem;
+}
+
+.video-modal-backdrop.active {
+ opacity: 1;
+ pointer-events: auto;
+}
+
+/* Botão Fechar Modal */
+.close-modal-btn {
+ position: absolute;
+ top: 1.5rem;
+ right: 1.5rem;
+ width: 3rem;
+ height: 3rem;
+ border-radius: 50%;
+ background: rgba(255, 255, 255, 0.05);
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ color: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: all 0.3s ease;
+ z-index: 210;
+}
+
+.close-modal-btn:hover {
+ background: rgba(255, 255, 255, 0.15);
+ border-color: rgba(255, 255, 255, 0.3);
+ transform: rotate(90deg);
+}
+
+.close-modal-btn svg {
+ width: 1.4rem;
+ height: 1.4rem;
+}
+
+/* Container do Vídeo */
+.video-modal-container {
+ width: 100%;
+ max-width: 1000px;
+ background: rgba(10, 10, 15, 0.6);
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ border-radius: 12px;
+ overflow: hidden;
+ box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 255, 255, 0.05);
+ transform: scale(0.92);
+ transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+ z-index: 205;
+}
+
+.video-modal-backdrop.active .video-modal-container {
+ transform: scale(1);
+}
+
+/* Proporção 16:9 Fluida */
+.video-player-aspect {
+ position: relative;
+ width: 100%;
+ padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+ background-color: #000;
+}
+
+.video-player-aspect iframe,
+.video-player-aspect video {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border: none;
+}
+
+/* Informações do vídeo abaixo dele */
+.video-modal-info {
+ padding: 1.5rem;
+ background-color: rgba(6, 6, 9, 0.95);
+ border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.modal-video-title {
+ font-family: var(--font-title);
+ font-size: 1.25rem;
+ font-weight: 700;
+ color: #fff;
+ margin-bottom: 0.25rem;
+}
+
+.modal-video-desc {
+ font-size: 0.85rem;
+ color: var(--text-muted);
+}
+
+/* 11. Otimização de Transição SPA (Fade de telas) */
+.page-section {
+ width: 100%;
+ min-height: 100vh;
+ opacity: 0;
+ transform: translateY(15px);
+ transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Classe aplicada quando a tela está totalmente ativa e renderizada */
+.page-section.active-fade {
+ opacity: 1;
+ transform: translateY(0);
+}

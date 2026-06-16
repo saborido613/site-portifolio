@@ -1,21 +1,15 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
+import App from "../../App";
 import Path from "./path";
-import Home from "../../Pages/Home/Home";
-import Infos from "../../Pages/Infos/infos";
 
 function Rotas() {
-    return(
-        <Routes>
-            <Route
-                path={Path.HOME}
-                element={<Home/>}
-            />
-            <Route
-                path={Path.INFOS}
-                element={<Infos/>}
-            />
-        </Routes>
-    )
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to={Path.HOME} replace />} />
+      <Route path={Path.HOME} element={<App />} />
+      <Route path={Path.INFOS} element={<App />} />
+    </Routes>
+  );
 }
 
 export default Rotas;
