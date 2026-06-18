@@ -796,6 +796,7 @@ button {
 .play-svg {
  width: 1.85rem;
  height: 1.85rem;
+ margin: 0 0 0 0.256rem;
 }
 
 .card-info {
