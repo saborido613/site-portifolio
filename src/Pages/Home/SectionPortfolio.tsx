@@ -19,7 +19,9 @@ function SectionPortfolio() {
               className="portfolio-card play-project-btn"
               data-video-url={project.videoUrl}
               data-title={project.modalTitle}
-              onClick={() => openModal(project.videoUrl, project.modalTitle, project.category)}
+              onClick={() =>
+                openModal(project.videoUrl, project.modalTitle, project.category, project.playlistUrl)
+              }
             >
               <div className="card-image-wrapper">
                 <img src={project.img} alt={project.title} loading="lazy" />

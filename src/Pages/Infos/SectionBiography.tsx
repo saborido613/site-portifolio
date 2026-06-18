@@ -19,8 +19,7 @@ function SectionBiography() {
 
         <div className="bio-content">
           <p className="lead-text">
-            <span className="highlight-text">Victória Almeida</span>, 25 anos. Moradora de uma das maiores periferias de{" "}
-            <span className="highlight-text">São Paulo, Paraisópolis</span>.
+            Moradora de uma das maiores periferias de <span className="highlight-text">São Paulo</span>, Paraisópolis.
           </p>
 
           <p className="normal-text">
@@ -43,14 +42,13 @@ function SectionBiography() {
             </a>
             , que tem o nobre intuito de <span className="highlight-text">democratizar o acesso</span> ao audiovisual para
             jovens e adultos de todas as favelas de São Paulo através de aulas, workshops gratuitos e exibições de
-            curtas-metragens <span className="highlight-text">desde 2021</span>.
+            curtas-metragens <span className="highlight-text">desde 2021</span>, de forma 100% gratuita e inclusiva.
           </p>
 
           <p className="normal-text">
-            Destaca-se e leva seus conhecimentos com frequência como <span className="highlight-text">palestrante</span> em
-            unidades renomadas do Sesc, Senac, Fundação Casa, Fábricas de Cultura e diversos podcasts, visando construir
-            espaços significativos de troca que facilitem a inserção de novos profissionais e abordem com honestidade os
-            desafios do <span className="highlight-text">mercado criativo</span>.
+            Compartilha seus conhecimentos com frequência como <span className="highlight-text">palestrante</span> em
+            unidades renomadas como: Belas Artes, ESPM, Fecap, Sesc, Senac, Fundação Casa, Fábricas de Cultura, eventos diversos e podcasts, visando construir
+            espaços significativos de troca que abordem sobre os desafios e bastidores do <span className="highlight-text">mercado criativo</span>.
           </p>
         </div>
       </div>

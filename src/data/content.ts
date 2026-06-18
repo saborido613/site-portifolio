@@ -19,6 +19,7 @@ export interface PortfolioProject {
   videoUrl: string;
   modalTitle: string;
   img: string;
+  playlistUrl?: string;
 }
 
 export const heroSlides: HeroSlide[] = [
@@ -108,6 +109,7 @@ export const portfolioProjects: PortfolioProject[] = [
   { category: "Streetwear & Cultura", title: "Hypebeast Cobertura", artist: "Hypebeast Brasil", videoUrl: "https://www.instagram.com/reel/CmewoQZooIb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", modalTitle: "Hypebeast Brasil", img: "/img/HYPEBEAST_BRASIL.png" },
   { category: "Cultura / Eventos", title: "Baile da Thays", artist: "Aftermovie Oficial", videoUrl: "https://www.instagram.com/reel/C3yPMTIJJry/?igsh=eWw5YnNpdXllem93", modalTitle: "Baile da Thays", img: "/img/Baile_da_thays.jpeg" },
   { category: "Projeto Social / Audiovisual", title: "Projeto Paracine", artist: "Democratizando o Cinema", videoUrl: "https://www.instagram.com/reel/C8DbqaKxn6s/?igsh=OHc0Z3FwYXZhZTJh", modalTitle: "Projeto Paracine", img: "/img/PARA_CINE.jpeg" },
+  { category: "Álbum", title: "XTRANHO", artist: "Matuê", videoUrl: "https://www.youtube.com/watch?v=Z3_jY015bsE&list=PLEd-urvJlSm_7OfWssVWyCYgS1biu5BV0&index=9", modalTitle: "Matuê — XTRANHO", img: "/img/xtranho.png", playlistUrl: "https://www.youtube.com/playlist?list=PLEd-urvJlSm_7OfWssVWyCYgS1biu5BV0" },
 ];
 
 export const galleryImages = [

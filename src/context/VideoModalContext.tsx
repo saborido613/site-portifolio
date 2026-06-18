@@ -13,7 +13,8 @@ interface VideoModalContextValue {
   title: string;
   description: string;
   videoUrl: string;
-  openModal: (videoUrl: string, title: string, description: string) => void;
+  playlistUrl: string | null;
+  openModal: (videoUrl: string, title: string, description: string, playlistUrl?: string) => void;
   closeModal: () => void;
 }
 
@@ -24,16 +25,19 @@ export function VideoModalProvider({ children }: { children: ReactNode }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [videoUrl, setVideoUrl] = useState("");
+  const [playlistUrl, setPlaylistUrl] = useState<string | null>(null);
 
-  const openModal = useCallback((url: string, modalTitle: string, desc: string) => {
+  const openModal = useCallback((url: string, modalTitle: string, desc: string, playlist?: string) => {
     setVideoUrl(url);
     setTitle(modalTitle);
     setDescription(desc);
+    setPlaylistUrl(playlist ?? null);
     setIsOpen(true);
   }, []);
 
   const closeModal = useCallback(() => {
     setIsOpen(false);
+    setPlaylistUrl(null);
   }, []);
 
   useEffect(() => {
@@ -52,8 +56,8 @@ export function VideoModalProvider({ children }: { children: ReactNode }) {
   }, [isOpen, closeModal]);
 
   const value = useMemo(
-    () => ({ isOpen, title, description, videoUrl, openModal, closeModal }),
-    [isOpen, title, description, videoUrl, openModal, closeModal],
+    () => ({ isOpen, title, description, videoUrl, playlistUrl, openModal, closeModal }),
+    [isOpen, title, description, videoUrl, playlistUrl, openModal, closeModal],
   );
 
   return <VideoModalContext.Provider value={value}>{children}</VideoModalContext.Provider>;

@@ -68,7 +68,7 @@ function VideoPlayerContent({ url, title }: { url: string; title: string }) {
 }
 
 function VideoModal() {
-  const { isOpen, title, description, videoUrl, closeModal } = useVideoModal();
+  const { isOpen, title, description, videoUrl, playlistUrl, closeModal } = useVideoModal();
 
   return (
     <div
@@ -90,9 +90,21 @@ function VideoModal() {
           {isOpen && videoUrl ? <VideoPlayerContent url={videoUrl} title={title} /> : null}
         </div>
         <div className="video-modal-info" id="video-modal-info">
-          <h3 className="modal-video-title" id="modal-video-title">
-            {title}
-          </h3>
+          <div className="modal-video-header">
+            <h3 className="modal-video-title" id="modal-video-title">
+              {title}
+            </h3>
+            {playlistUrl ? (
+              <a
+                href={playlistUrl}
+                className="modal-playlist-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver playlist completa
+              </a>
+            ) : null}
+          </div>
           <p className="modal-video-desc" id="modal-video-desc">
             {description}
           </p>

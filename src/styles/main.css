@@ -441,6 +441,12 @@ button {
  transform: translateY(-1px);
 }
 
+.play-icon,
+.play-svg {
+ display: block;
+ flex-shrink: 0;
+}
+
 .play-icon {
  width: 1.2rem;
  height: 1.2rem;
@@ -788,9 +794,8 @@ button {
 }
 
 .play-svg {
- width: 1.6rem;
- height: 1.6rem;
- margin-left: 0.2rem; /* Ajuste óptico de centralização do triângulo */
+ width: 1.85rem;
+ height: 1.85rem;
 }
 
 .card-info {
@@ -1294,17 +1299,47 @@ button {
  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.modal-video-header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 1rem;
+ margin-bottom: 0.25rem;
+}
+
 .modal-video-title {
  font-family: var(--font-title);
  font-size: 1.25rem;
  font-weight: 700;
  color: #fff;
- margin-bottom: 0.25rem;
+ margin-bottom: 0;
+ flex: 1;
+ min-width: 0;
 }
 
 .modal-video-desc {
  font-size: 0.85rem;
  color: var(--text-muted);
+}
+
+.modal-playlist-link {
+ display: inline-flex;
+ align-items: center;
+ flex-shrink: 0;
+ padding: 0.65rem 1.25rem;
+ border-radius: 50px;
+ border: 1px solid rgba(255, 255, 255, 0.2);
+ color: #fff;
+ font-size: 0.85rem;
+ font-weight: 600;
+ letter-spacing: 0.02em;
+ transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-playlist-link:hover {
+ background: rgba(255, 255, 255, 0.1);
+ border-color: rgba(255, 255, 255, 0.35);
+ transform: translateY(-2px);
 }
 
 /* 11. Otimização de Transição SPA (Fade de telas) */
