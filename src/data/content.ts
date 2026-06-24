@@ -83,6 +83,17 @@ export const brands: Brand[] = [
   { name: "Pizza Hut", href: null, img: "/img/pizza_hut.png" },
   { name: "th4ys", href: "https://www.instagram.com/reel/C3yPMTIJJry/", img: "/img/th4ys.png" },
   { name: "Volkswagen", href: "https://www.instagram.com/p/Czw0zolPana/", img: "/img/volkswagen_logo.png" },
+  { name: "Avon", href: "https://www.avon.com.br/", img: "/img/avonlogo.png" },
+  // { name: "Droper", href: "https://droper.app/", img: "/img/droper.webp" },
+  { name: "Ecko", href: "https://www.eckoshop.com.br/", img: "/img/ecko.svg" },
+  { name: "Galeria Holding", href: "https://galeria.ag/", img: "/img/galeria-holding-pt.png" },
+  { name: "Kenner", href: "https://www.kenner.com.br/", img: "/img/kennerlogo.png" },
+  { name: "KondZilla", href: "https://kondzilla.com/", img: "/img/KondZilla_logo.webp" },
+  { name: "McDonald's", href: "https://www.mcdonalds.com.br/", img: "/img/mequi.png" },
+  { name: "Natura", href: "https://www.natura.com.br/", img: "/img/natura.png" },
+  { name: "Puma", href: "https://br.puma.com/", img: "/img/pumalogo.png" },
+  { name: "Red Bull", href: "https://www.redbull.com/br-pt", img: "/img/redbull.png" },
+  { name: "SBP", href: "https://www.sbpprotege.com.br/produtos/inseticida-aerossol/multi-inseticida/", img: "/img/sbp.png" },
 ];
 
 export const portfolioProjects: PortfolioProject[] = [
