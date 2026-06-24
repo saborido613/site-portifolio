@@ -25,8 +25,8 @@ export interface PortfolioProject {
 
 export const heroSlides: HeroSlide[] = [
   {
-    category: "Videoclipe",
-    title: "Matuê - OS MELHORES",
+    category: "Álbum",
+    title: "XTRANHO - MATUÊ",
     btnText: "Assistir Produção",
     videoUrl: "https://www.youtube.com/watch?v=wc9UwhMyJfQ",
     videoSrc: "/Videos/matue.mp4",
