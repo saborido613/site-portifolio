@@ -25,19 +25,33 @@ export interface PortfolioProject {
 
 export const heroSlides: HeroSlide[] = [
   {
+    category: "Videoclipe",
+    title: "Matuê - OS MELHORES",
+    btnText: "Assistir Produção",
+    videoUrl: "https://www.youtube.com/watch?v=wc9UwhMyJfQ",
+    videoSrc: "/Videos/matue.mp4",
+  },
+  {
+    category: "Videoclipe",
+    title: "BUDAH, Duquesa - VIP (ninguém te conhece)",
+    btnText: "Assistir Produção",
+    videoUrl: "https://www.youtube.com/watch?v=ltnKqdBPxFg",
+    videoSrc: "/Videos/duq.mp4",
+  },
+  {
     category: "Publicidade & Games",
     title: "Anitta — Free Fire",
     btnText: "Assistir Produção",
     videoUrl: "https://www.youtube.com/watch?v=myDqNZq7r9w",
     videoSrc: "/Videos/Anitta - Free Fire.mp4",
   },
-  {
-    category: "Documentário / Social",
-    title: "Facilitadão",
-    btnText: "Assistir Produção",
-    videoUrl: "/Videos/facilitadao.mp4",
-    videoSrc: "/Videos/facilitadao.mp4",
-  },
+  // {
+  //   category: "Documentário / Social",
+  //   title: "Facilitadão",
+  //   btnText: "Assistir Produção",
+  //   videoUrl: "/Videos/facilitadao.mp4",
+  //   videoSrc: "/Videos/facilitadao.mp4",
+  // },
   {
     category: "Videoclipe Oficial",
     title: "Veigh — Nóis é Nóis",
@@ -45,13 +59,13 @@ export const heroSlides: HeroSlide[] = [
     videoUrl: "https://www.youtube.com/watch?v=djivfk-F4OI",
     videoSrc: "/Videos/VEIGH - Nois é Nois (Clipe Oficial).mp4",
   },
-  {
-    category: "Performance & Arte",
-    title: "Iza — O Movimento",
-    btnText: "Assistir Vídeo",
-    videoUrl: "https://www.youtube.com/watch?v=HTD7DQDsILk",
-    videoSrc: "/Videos/Iza - O Movimento.mp4",
-  },
+  // {
+  //   category: "Performance & Arte",
+  //   title: "Iza — O Movimento",
+  //   btnText: "Assistir Vídeo",
+  //   videoUrl: "https://www.youtube.com/watch?v=HTD7DQDsILk",
+  //   videoSrc: "/Videos/Iza - O Movimento.mp4",
+  // },
   {
     category: "Campanha Publicitária",
     title: "Pizza Hut — Melts",
