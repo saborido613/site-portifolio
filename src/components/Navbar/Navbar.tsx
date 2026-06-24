@@ -38,7 +38,7 @@ function Navbar() {
             Sobre Mim
           </Link>
           <div className="social-links">
-            <a href="https://www.instagram.com/vickkalmeida/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/vicalmeidav/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="2" y="2" width="20" height="20" rx="5" />
                 <circle cx="12" cy="12" r="4" />
@@ -46,7 +46,7 @@ function Navbar() {
               </svg>
             </a>
             <a
-              href="https://br.linkedin.com/in/vict%C3%B3ria-almeida-a2b24a19b"
+              href="https://www.linkedin.com/in/vic-almeida-a2b24a19b/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -78,11 +78,11 @@ function Navbar() {
           Sobre Mim
         </Link>
         <div className="mobile-socials">
-          <a href="https://www.instagram.com/vickkalmeida/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/vicalmeidav/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             Instagram
           </a>
           <a
-            href="https://br.linkedin.com/in/vict%C3%B3ria-almeida-a2b24a19b"
+            href="https://www.linkedin.com/in/vic-almeida-a2b24a19b/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

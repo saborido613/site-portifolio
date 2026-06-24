@@ -21,13 +21,13 @@ function SectionContacts() {
 
         <div className="contacts-grid">
           <a
-            href="https://www.instagram.com/vickkalmeida/"
+            href="https://www.instagram.com/vicalmeidav/"
             target="_blank"
             rel="noopener noreferrer"
             className="glass-card"
           >
             <span className="contact-label">Instagram</span>
-            <span className="contact-value">@vickkalmeida</span>
+            <span className="contact-value">@vicalmeidav</span>
           </a>
 
           <div className="glass-card" id="email-box">
