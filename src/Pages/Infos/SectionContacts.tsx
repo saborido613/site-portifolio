@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from "../../components/Logo";
 
 function SectionContacts() {
   const [copied, setCopied] = useState(false);
@@ -53,7 +54,7 @@ function SectionContacts() {
         </div>
 
         <div className="bio-footer">
-          <img src="/img/globo_branco.png" alt="" className="footer-logo" />
+          <Logo className="footer-logo" />
         </div>
       </div>
     </section>
