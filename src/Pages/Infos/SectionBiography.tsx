@@ -14,41 +14,28 @@ function SectionBiography() {
 
         <div className="bio-header">
           <span className="bio-tag">Quem Sou Eu</span>
-          <h1 className="bio-main-title">Conexão, Arte, Cultura Periférica &amp; Audiovisual</h1>
+          <h1 className="bio-main-title">Produção, Criatividade e Gestão</h1>
         </div>
 
         <div className="bio-content">
           <p className="lead-text">
-            Moradora de uma das maiores periferias de <span className="highlight-text">São Paulo</span>, Paraisópolis.
+            Moradora de uma das maiores periferias de São Paulo, Paraisópolis.
           </p>
 
           <p className="normal-text">
-            Formada em Relações Públicas como <span className="highlight-text">bolsista 100%</span> pela prestigiada
-            universidade Belas Artes, se desenvolve diariamente na área audiovisual onde atua ativamente em projetos de
-            marcas, artistas e socioculturais nas periferias, com foco especial na arte e cinema. Seu objetivo de vida é
-            amplificar cada vez mais os espaços e <span className="highlight-text">potencializar a periferia</span> de modo
-            geral, <span className="highlight-text">artisticamente e socialmente</span>.
+          Formada em Relações Públicas como bolsista 100% pela universidade Belas Artes, se desenvolve diariamente na área audiovisual onde atua ativamente em projetos de marcas, artistas e socioculturais, com foco especial na arte e audiovisual. 
           </p>
 
           <p className="normal-text">
-            É co-fundadora do <span className="highlight-text">Projeto Paracine</span>{" "}
-            <a
-              className="inline-link"
-              href="https://www.instagram.com/para_cine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              (@para_cine)
-            </a>
-            , que tem o nobre intuito de <span className="highlight-text">democratizar o acesso</span> ao audiovisual para
-            jovens e adultos de todas as favelas de São Paulo através de aulas, workshops gratuitos e exibições de
-            curtas-metragens <span className="highlight-text">desde 2021</span>, de forma 100% gratuita e inclusiva.
+          Um de seus objetivos é amplificar cada vez mais os espaços e potencializar a periferia de modo geral, artisticamente e socialmente.
           </p>
 
           <p className="normal-text">
-            Compartilha seus conhecimentos com frequência como <span className="highlight-text">palestrante</span> em
-            unidades renomadas como: Belas Artes, ESPM, Fecap, Sesc, Senac, Fundação Casa, Fábricas de Cultura, eventos diversos e podcasts, visando construir
-            espaços significativos de troca que abordem sobre os desafios e bastidores do <span className="highlight-text">mercado criativo</span>.
+          É co-fundadora do Projeto Paracine (@para_cine), que tem o intuito de democratizar o acesso ao audiovisual para jovens e adultos de todas as favelas de São Paulo, de forma 100% gratuita.
+          </p>
+
+          <p className="normal-text">
+          Compartilha seus conhecimentos com frequência como palestrante em unidades renomadas como: Belas Artes, ESPM, Fecap, Sesc, Senac, Fundação Casa, Fábricas de Cultura, eventos diversos e podcasts, visando construir espaços significativos de troca que abordem sobre os desafios e bastidores do mercado criativo.
           </p>
         </div>
       </div>

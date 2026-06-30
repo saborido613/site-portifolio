@@ -112,6 +112,8 @@ export const brands: Brand[] = [
 
 export const portfolioProjects: PortfolioProject[] = [
 
+  { category: "Álbum", title: "XTRANHO", artist: "Matuê", videoUrl: "https://www.youtube.com/watch?v=Z3_jY015bsE&list=PLEd-urvJlSm_7OfWssVWyCYgS1biu5BV0&index=9", modalTitle: "Matuê — XTRANHO", img: "/img/xtranho.png", playlistUrl: "https://www.youtube.com/playlist?list=PLEd-urvJlSm_7OfWssVWyCYgS1biu5BV0" },
+
   { category: "Entretenimento", title: "Colapso Global", artist: "Teto & Wiu", videoUrl: "https://www.youtube.com/watch?v=tqLzFFt8t4M&list=PLEd-urvJlSm_f19gOUc2mq7fas-TeRc3q", modalTitle: "Jornal Global: O Colapso é real", img: "/img/colapso_global_thumb.png", role: "Direção de produção" },
   
   { category: "Videoclipe", title: "Facecard", artist: "Wiu & Teto - ft. Yuri Redicopa", videoUrl: "https://www.youtube.com/watch?v=MFsxevr9Wb8", modalTitle: "FACECARD WIU & TETO ft. YURI REDICOPA (Clipe Oficial) 30PRAUM", img: "/img/facecard_thumb.png", role: "Direção de produção" },
@@ -183,8 +185,6 @@ export const portfolioProjects: PortfolioProject[] = [
   { category: "Cultura / Eventos", title: "Baile da Thays", artist: "Aftermovie Oficial", videoUrl: "https://www.instagram.com/reel/C3yPMTIJJry/?igsh=eWw5YnNpdXllem93", modalTitle: "Baile da Thays", img: "/img/Baile_da_thays.jpeg" },
   
   { category: "Projeto Social / Audiovisual", title: "Projeto Paracine", artist: "Democratizando o Cinema", videoUrl: "https://www.instagram.com/reel/C8DbqaKxn6s/?igsh=OHc0Z3FwYXZhZTJh", modalTitle: "Projeto Paracine", img: "/img/PARA_CINE.jpeg" },
-  
-  { category: "Álbum", title: "XTRANHO", artist: "Matuê", videoUrl: "https://www.youtube.com/watch?v=Z3_jY015bsE&list=PLEd-urvJlSm_7OfWssVWyCYgS1biu5BV0&index=9", modalTitle: "Matuê — XTRANHO", img: "/img/xtranho.png", playlistUrl: "https://www.youtube.com/playlist?list=PLEd-urvJlSm_7OfWssVWyCYgS1biu5BV0" },
 ];
 
 export const galleryImages = [
